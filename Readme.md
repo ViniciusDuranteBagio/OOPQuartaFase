@@ -27,9 +27,11 @@ git config --global user.email "seu-email@exemplo.com"
 ---
 
 ## 3) Criar uma nova branch
+O padrão de nomenclatura de branch para ser usado é o numero da aula e o nome e sobrenome do aluno.
+Exemplo: aula-3-vinicius-durante-bagio
 
 ```bash
-git checkout -b feature/minha-nova-funcionalidade
+git checkout -b aula-x-nome-do-aluno-e-sobrenome
 ```
 
 Verifique que está na branch correta:
