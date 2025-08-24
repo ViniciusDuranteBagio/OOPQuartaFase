@@ -77,18 +77,7 @@ Nos próximos pushes para essa mesma branch, basta usar:
 git push
 ```
 
----
-
-## 6) Abrir um Pull Request (PR)
-
-1. Vá até o repositório no GitHub  
-2. Clique em **Compare & pull request**  
-3. Preencha título e descrição do PR  
-4. Clique em **Create pull request**
-
----
-
-## 7) Manter sua branch atualizada com a `main`
+## 6) Manter sua branch atualizada com a `main`
 
 ```bash
 # Vá para a branch principal
