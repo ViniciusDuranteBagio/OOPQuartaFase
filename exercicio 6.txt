@@ -1,0 +1,43 @@
+public class Livro {
+    private String titulo;
+    private String autor;
+    private int anoPubli;
+
+    public Livro(String titulo, String autor, int anoPubli) {
+        this.titulo = titulo;
+        this.autor = autor;
+        setAnoPubli(anoPubli);
+    }
+
+    public String getTitulo() {
+        return titulo;
+    }
+
+    public void setTitulo(String titulo) {
+        this.titulo = titulo;
+    }
+
+    public String getAutor() {
+        return autor;
+    }
+
+    public void setAutor(String autor) {
+        this.autor = autor;
+    }
+
+    public int getAnoPubli() {
+        return anoPubli;
+    }
+
+    public void setAnoPublicacao(int anoPubli) {
+        if (anoPubli > 0) {
+            this.anoPubli = anoPubli;
+        } else {
+            System.out.println("O ano de publicação invalido, por favor digite um numero maior que 0 ");
+        }
+    }
+
+    public void exibDetalhes() {
+        System.out.println("Título: " + titulo + ", Autor: " + autor + ", Ano de Publicação: " + anoPubli);
+    }
+}

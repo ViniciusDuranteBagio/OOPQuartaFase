@@ -1,0 +1,41 @@
+public class ContaBancaria {
+    private String numConta;
+    private double saldo;
+    private String titular;
+
+    public ContaBancaria(String numeroConta, String titular) {
+        this.numConta = numConta;
+        this.titular = titular;
+        this.saldo = 0.0;
+    }
+
+    public String getNumConta() {
+        return numConta;
+    }
+
+    public double getSaldo() {
+        return saldo;
+    }
+
+    public String getTitular() {
+        return titular;
+    }
+
+    public void depositar(double valor) {
+        if (valor > 0) {
+            saldo += valor;
+        }
+    }
+
+    public void sacar(double valor) {
+        if (valor > 0 && saldo >= valor) {
+            saldo -= valor;
+        } else {
+            System.out.println("Valor de saldo inexistente ou invalido");
+        }
+    }
+
+    public void exibSaldo() {
+        System.out.println("Saldo atual" + saldo);
+    }
+}

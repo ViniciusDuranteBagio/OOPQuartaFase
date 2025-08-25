@@ -1,0 +1,51 @@
+public class Produto {
+    private String nome;
+    private double preco;
+    private int quantEmEstoque;
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public double getPreco() {
+        return preco;
+    }
+
+    public void setPreco(double preco) {
+        if (preco > 0) {
+            this.preco = preco;
+        } else {
+            System.out.println("O preço está invalido, por favor digitar um que seja maior que 0");
+        }
+    }
+
+    public int getQuantEmEstoque() {
+        return quantidadeEmEstoque;
+    }
+
+    public void setQuantEmEstoque(int quantEmEstoque) {
+        if (quantEmEstoque >= 0) {
+            this.quantEmEstoque = quantEmEstoque;
+        } else {
+            System.out.println("A qauntidade está invalida, por favor digitar uma que seja maior que 0");
+        }
+    }
+
+    public void addEstoque(int quantidade) {
+        if (quantidade > 0) {
+            quantEmEstoque += quantidade;
+        }
+    }
+
+    public void vender(int quantidade) {
+        if (quantidade > 0 && quantEmEstoque >= quantidade) {
+            quantEmEstoque -= quantidade;
+        } else {
+            System.out.println("Quantidade digitada invalida ou em falta no estoque");
+        }
+    }
+}
