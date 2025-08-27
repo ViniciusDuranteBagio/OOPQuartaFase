@@ -208,5 +208,6 @@ public class atividades {
         System.out.println("nome : " + titulo +
                 "\nautor : " + autor +
                 "\nano de publicação : " + anoPublicacao);
+
     }
 }
