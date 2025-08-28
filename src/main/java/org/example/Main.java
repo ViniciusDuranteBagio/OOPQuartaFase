@@ -1,6 +1,6 @@
 package org.example;
 
-public class Main {
+public class  Main {
     public static void main(String[] args) {
         ContaBancaria conta = new ContaBancaria(1234);
         System.out.println(conta.getNumeroConta());
