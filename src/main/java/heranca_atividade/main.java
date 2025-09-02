@@ -22,6 +22,7 @@ public class main {
 
          */
 
+        /* atividade 3
         Carro car = new Carro();
         car.marca = "fiat";
         car.modelo = "argo";
@@ -35,6 +36,29 @@ public class main {
         moto.qtdCc = 124.99;
 
         System.out.println(moto.marca + "\n" + moto.modelo + "\n" + moto.qtdCc);
+
+         */
+
+        /* atividade 4
+        Cachorro cao = new Cachorro();
+        cao.nome  = "toto";
+        cao.idade = 11;
+
+        System.out.println("idade : " + cao.idade);
+        cao.latir();
+        cao.dormir();
+
+         */
+
+        Cachorro cao1 = new Cachorro();
+        cao1.nome = "totozinho";
+        cao1.idade = 10;
+
+        cao1.brincar();
+        cao1.exibirInfo();
+
+
+
 
 
 
