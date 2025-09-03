@@ -1,4 +1,4 @@
-package classe.Exercicio_Aula_2;
+package classe.src.Exercicio_Aula_2;
 
 public class Livro {
 

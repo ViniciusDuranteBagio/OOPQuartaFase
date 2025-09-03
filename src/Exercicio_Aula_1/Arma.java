@@ -1,4 +1,4 @@
-package classe.Exercicio_Aula_1;
+package classe.src.Exercicio_Aula_1;
 
 public class Arma {
      String nome= "ak-47";
