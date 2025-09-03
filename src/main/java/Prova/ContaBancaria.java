@@ -2,8 +2,8 @@ package Prova;
 
 public class ContaBancaria {
 
-    private String titular;
-    private double saldo;
+    public String titular;
+    public double saldo;
 
     public void depositar(double valor) {
         if (valor > 0) {
@@ -25,6 +25,9 @@ public class ContaBancaria {
         } else {
             System.out.println("Valor de saque deve ser positivo.");
         }
+    }
+    public double getSaldo() {
+        return saldo;
     }
 
 }

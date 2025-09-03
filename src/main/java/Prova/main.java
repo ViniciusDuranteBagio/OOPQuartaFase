@@ -33,8 +33,18 @@ public class main {
         Animal meuAnimal = new Animal();
         meuAnimal.idade = 5;
         meuAnimal.nome = "Rex";
-
         meuAnimal.som();
+
+        //Questão 4
+
+        ContaBancaria conta = new ContaBancaria();
+        conta.titular = "Maria";
+        conta.saldo = 1000;
+        conta.depositar(500);
+        conta.sacar(300);
+        conta.sacar(1500);
+        System.out.println("Saldo final: R$" + conta.getSaldo());
+
 
         //Questão 3
         Produto produto1 = new Produto();
@@ -47,6 +57,12 @@ public class main {
         produto2.nome = "Smartphone";
         produto2.preco = 2999.99;
         produto2.exibirDados();
+
+        // Questão 2
+        Pessoa pessoa = new Pessoa();
+        pessoa.idade = 30;
+        pessoa.nome = "João";
+        pessoa.apresentar();
 
         // Questão 1
         Carro veiculo = new Carro();
