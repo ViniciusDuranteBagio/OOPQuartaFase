@@ -1,4 +1,4 @@
-Consegue me ajudar com esse erro:
+
 ➜  QUESTÃO4 git:(prova-darlon-torres) ✗ javac Main.java
 Main.java:5: error: class, interface, enum, or record expected
  Class ContaBancaria {
