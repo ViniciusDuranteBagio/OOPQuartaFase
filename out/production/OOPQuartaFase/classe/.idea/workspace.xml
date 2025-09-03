@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="2d097591-c724-4881-8d30-bad59bb4af41" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Exercicio_Aula_1/Arma.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Exercicio_Aula_1/Herois.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Exercicio_Aula_1/Inimigo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Exercicio_Aula_1/Inventario.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Exercicio_Aula_1/Jogador.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Exercicio_Aula_1/Lampada.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Exercicio_Aula_1/Login.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Exercicio_Aula_1/Main_Lampada.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Exercicio_Aula_1/Main_arma.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Exercicio_Aula_1/Main_herois.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Exercicio_Aula_1/Main_inimigo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Exercicio_Aula_1/Main_inventario.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Exercicio_Aula_1/Main_jogador.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Exercicio_Aula_1/Main_monstro.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Exercicio_Aula_1/Main_personagem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Exercicio_Aula_1/Main_pontuacao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Exercicio_Aula_1/Monstro.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Exercicio_Aula_1/Personagem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Exercicio_Aula_1/Pontuacao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Exercicio_Aula_2/Aluno.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Exercicio_Aula_2/ContaBancaria.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Exercicio_Aula_2/Livro.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Exercicio_Aula_2/Main_Aluno.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Exercicio_Aula_2/Main_Conta.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Exercicio_Aula_2/Main_Livro.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Exercicio_Aula_2/Main_Pessoa.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Exercicio_Aula_2/Main_Produto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Exercicio_Aula_2/Main_Retangulo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Exercicio_Aula_2/Pessoa.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Exercicio_Aula_2/Produto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Exercicio_Aula_2/Retangulo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/ExemploTest.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
+  <component name="ProjectId" id="31qyBtRKVTYihcgIK0OgjHKhC0l" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Animal_Main.executor": "Run",
+    "Application.Main.executor": "Run",
+    "Application.Main_Aluno.executor": "Run",
+    "Application.Main_Conta.executor": "Run",
+    "Application.Main_Livro.executor": "Run",
+    "Application.Main_Pessoa.executor": "Run",
+    "Application.Main_Produto.executor": "Run",
+    "Application.Main_Retangulo.executor": "Run",
+    "Application.Main_arma.executor": "Run",
+    "Application.Main_veiculo.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "aula-3-davi-gesser-dutra",
+    "last_opened_file_path": "C:/Users/davig/OneDrive/Projetos/JAVA/Materias faculdade/OOPQuartaFase"
+  }
+}]]></component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2d097591-c724-4881-8d30-bad59bb4af41" name="Changes" comment="" />
+      <created>1756265765411</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1756265765411</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
