@@ -35,11 +35,10 @@ public class Main {
         animal.idade = 8;
         animal.fazerSom();
 
-        Pessoa2 pessoa2 = new Pessoa2();
         Aluno aluno = new Aluno();
-        pessoa2.nome = "Joao";
-        pessoa2.idade = 18;
-        pessoa2.apresentar();
+        pessoa.nome = "Joao";
+        pessoa.idade = 18;
+        pessoa.apresentar();
         aluno.nome = "Maria";
         aluno.idade = 19;
         aluno.matricula = 856;

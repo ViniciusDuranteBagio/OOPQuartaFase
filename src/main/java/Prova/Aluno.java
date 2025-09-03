@@ -1,6 +1,6 @@
 package Prova;
 
-public class Aluno extends Pessoa2 {
+public class Aluno extends Pessoa {
 
     public int matricula;
 
