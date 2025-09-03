@@ -1,131 +1,48 @@
 ## Repositorio para a aula de Orientação a Objetos da Quarta Fase de sistemas
 
-# Guia de Contribuição
+# Prova 1
 
-## 1) Clonar o repositório
+## 1) Como criar sua branch
+- Entre nesse link: https://github.com/ViniciusDuranteBagio/OOPQuartaFase/branches
+- Aperte no botão "New Branch" para criar um nova branch
+- Deixe o nome da branch como "prova-seu-nome", e escolha para ser em cima da branch Prova no Source
+- Vá no terminal do intelij e rode os seguintes comandos:
+- git fetch
+- git checkout prova-seu-nome (aqui é o nome da branch criada anteriormente)
+- git branch -> Verifique se está na branch que você criou agora
 
-```bash
-# Usando HTTPS
-git clone https://github.com/ViniciusDuranteBagio/OOPQuartaFase.git
-```
 
-Entre na pasta do projeto:
+# Questões da prova
+## Questão 1 (1,00)
+Crie uma classe chamada Carro com os atributos marca e ano. Depois, na classe main, crie um objeto dessa classe e atribua valores aos atributos. Crie um método ExibirDados e mostre esses valores para o usuario.
+## Questão 2 (1,00)
+Crie uma classe chamada Pessoa com os atributos nome e idade, e um método apresentar() que imprime:
+   “Olá, meu nome é <nome> e tenho <idade> anos.”
+## Questão 3 (1,00)
+Crie uma classe Produto com os atributos nome e preco. No classe main, crie dois objetos dessa classe e imprima os valores de cada um.
+## Questão 4 (1,00)
+Crie uma classe ContaBancaria com os atributos titular e saldo. Adicione métodos depositar(double valor) e sacar(double valor) que atualizam o saldo.
+O saldo nunca pode ficar negativo.
+## Questão 5 (1,00)
+Crie uma classe Animal com os atributos nome e idade, e um método fazerSom(). Na classe main, crie um objeto Animal e chame o método para fazer som, mostrando o nome a idade do animal, a frase "fez algum som".
+## Questão 6 (1,00)
+- Crie uma classe Pessoa, com os atributos nome e idade, com um método apresentar() que vai falar "Olá sou, {nome}, e minha tenho {idade} anos".
+- Crie uma classe Aluno que herda de Pessoa. Adicione o atributo matricula. Sobrescreva o método apresentar() para imprimir também a matrícula.
+## Questão 7 (1,00)
+- Crie uma classe Cachorro que vai herdar de Animal, e Sobrescreva o metodo FazerSom() para o som de um Cachorro latindo.
+- Crie uma classe Gato que vai herdar de Animal, e Sobrescreva o metodo FazerSom() para o som de um Gato miando.
+- Na Main crie um objeto de Cachorro e um de Gato e faça eles fazerem o som.
+## Questão 8 (1,00)
+- Crie uma classe Professor que herda de Pessoa.
+- Adicione o atributo disciplina.
+- Sobrescreva o método apresentar() para imprimir também a disciplina.
+## Questão 9 (2)
+- Crie uma classe Funcionario com atributos nome e salario.
+- Crie um método calcularBonus() que retorna 10% do salário.
+- Crie uma subclasse Gerente que sobrescreve esse método para retornar 20% do salário.
 
-```bash
-cd OOPQuartaFase
-```
 
----
-
-## 2) (Primeiro uso) Configurar seu usuário no Git
-
-```bash
-git config --global user.name "Seu Nome"
-git config --global user.email "seu-email@exemplo.com"
-```
-
----
-
-## 3) Criar uma nova branch
-O padrão de nomenclatura de branch para ser usado é o numero da aula e o nome e sobrenome do aluno.
-Exemplo: aula-3-vinicius-durante-bagio
-
-```bash
-git checkout -b aula-x-nome-do-aluno-e-sobrenome
-```
-
-Verifique que está na branch correta:
-
-```bash
-git branch
-```
-
----
-
-## 4) Fazer alterações, adicionar e commitar
-
-```bash
-# Verifique os arquivos alterados
-git status
-
-# Adicione os arquivos
-git add .
-
-# Faça o commit
-git commit -m "feat: sua descrição clara e objetiva"
-```
-
-Sugestões de prefixos para commits:
-- `feat:` nova funcionalidade  
-- `fix:` correção de bug  
-- `docs:` documentação  
-- `refactor:` refatoração de código  
-- `test:` testes  
-- `chore:` mudanças diversas (configurações, build, etc.)
-
----
-
-## 5) Enviar a branch para o repositório remoto (push)
-
-```bash
-git push -u origin feature/minha-nova-funcionalidade
-```
-
-Nos próximos pushes para essa mesma branch, basta usar:
-
-```bash
-git push
-```
-
-## 6) Manter sua branch atualizada com a `main`
-
-```bash
-# Vá para a branch principal
-git checkout main
-
-# Atualize a main local
-git pull origin main
-
-# Volte para sua branch
-git checkout feature/minha-nova-funcionalidade
-
-# Rebase para aplicar suas mudanças no topo da main
-git rebase main
-```
-
-Se houver conflitos:
-```bash
-# Resolva os arquivos manualmente
-git add arquivo-resolvido
-git rebase --continue
-```
-
-Depois envie sua branch atualizada:
-```bash
-git push --force-with-lease
-```
-
----
-
-## Fluxo resumido
-
-```bash
-git clone https://github.com/ViniciusDuranteBagio/OOPQuartaFase.git
-cd OOPQuartaFase
-git checkout -b feature/minha-nova-funcionalidade
-# editar arquivos...
-git add .
-git commit -m "feat: descrição curta"
-git push -u origin feature/minha-nova-funcionalidade
-```
-
----
-
-## ⚠️ Dicas de solução de problemas
-
-| Situação                       | O que verificar                                                                 |
-|-------------------------------|----------------------------------------------------------------------------------|
-| Erro de autenticação (HTTPS)  | Gere um **Personal Access Token (PAT)** no GitHub e use no lugar da senha.       |
-| Permissão negada (SSH)        | Adicione sua chave pública no GitHub e teste com `ssh -T git@github.com`.        |
-| “Nada para enviar”            | Confirme se fez `git commit` antes de `git push`. Use `git log --oneline` para verificar. |
-| Conflitos de merge/rebase     | Resolva os arquivos listados, depois `git add` e `git rebase --continue`.        |
+## 3) Ao finalizar a prova rode os seguintes comandos
+- git add .
+- git commit -m "finalizada prova {Nome do Aluno}"
+- git push
