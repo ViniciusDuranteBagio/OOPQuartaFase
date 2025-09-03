@@ -1,0 +1,35 @@
+Consegue me ajudar com esse erro:
+➜  QUESTÃO4 git:(prova-darlon-torres) ✗ javac Main.java
+Main.java:5: error: class, interface, enum, or record expected
+ Class ContaBancaria {
+ ^
+Main.java:7: error: class, interface, enum, or record expected
+    double saldo;
+    ^
+Main.java:9: error: class, interface, enum, or record expected
+    void depositar(double valor) {
+    ^
+Main.java:12: error: class, interface, enum, or record expected
+            System.out.println("Depósito de R$" + valor + " realizado. Novo saldo: R$" + saldo);
+            ^
+Main.java:13: error: class, interface, enum, or record expected
+        } else {
+        ^
+Main.java:15: error: class, interface, enum, or record expected
+        }
+        ^
+Main.java:21: error: class, interface, enum, or record expected
+            System.out.println("Saque de R$" + valor + " realizado. Novo saldo: R$" + saldo);
+            ^
+Main.java:22: error: class, interface, enum, or record expected
+        } else if (valor > saldo) {
+        ^
+Main.java:24: error: class, interface, enum, or record expected
+        } else {
+        ^
+Main.java:26: error: class, interface, enum, or record expected
+        }
+        ^
+10 errors
+➜  QUESTÃO4 git:(prova-darlon-torres) ✗ 
+
