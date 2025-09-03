@@ -5,12 +5,12 @@ public class main {
 
         Funcionario func = new Funcionario();
         func.nome = "João";
-        func.salario = 2000;
+        func.setSalario(2000);
         func.calcularBonus();
 
         Gerente gerente = new Gerente();
         gerente.nome = "Maria";
-        gerente.salario = 5000;
+        gerente.setSalario(5000);
         gerente.calcularBonus();
     }
 }
