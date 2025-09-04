@@ -1,0 +1,13 @@
+package Prova;
+
+public class Gato extends Animal{
+
+    public Gato(String nome, Integer idade) {
+        super(nome, idade);
+    }
+
+    public void fazerSom(){
+        System.out.println("Gato " + getNome() + ", " + getIdade() + " anos, fez um Miau");
+
+    }
+}
