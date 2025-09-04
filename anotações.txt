@@ -1,0 +1,38 @@
+Classe e Objeto 
+Classe é o "molde" ou "planta" que define as características e comportamentos de algo. 
+Objeto é a "cópia concreta" feita a partir desse molde. 
+ 	Classe -> forma do bolo
+ 	Objeto -> bolo
+Exemplo: 
+Monstro m1 = new Monstro("Líthera", 100);  
+Aqui: 
+Monstro é a classe (o molde). 
+m1 é o objeto (um monstro específico com nome(Líthera) e vida(100)). 
+
+
+Atributos são as características do objeto, ou seja, "dados armazenados dentro dele". 
+	No Monstro: 
+	String nome; 
+	int vida; 
+O nome e a vida representam informações de cada monstro. 
+
+
+Construtor é um método usado para criar objetos já inicializados. 
+	public Monstro(String nome, int vida){ 
+    		this.nome = nome; 
+   		this.vida = vida; 
+	} 
+O nome do construtor é igual ao da classe.
+O this diferencia o atributo da classe (this.nome) do parâmetro do construtor (nome). 
+	Exemplo de uso: 
+	Monstro m1 = new Monstro("Líthera", 100); 
+
+
+Métodos são as ações (comportamentos) que o objeto pode realizar. 
+	public void rugir(){ 
+    		System.out.println("O monstro rugiu!"); 
+	} 
+Se chamarmos: 
+	m1.rugir(); 
+O console mostra: 
+	O monstro rugiu!
