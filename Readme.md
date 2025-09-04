@@ -1,11 +1,11 @@
 ## Repositorio para a aula de Orientação a Objetos da Quarta Fase de sistemas
 
-# Prova 1
+# OOPQuartaFase.src.Prova 1
 
 ## 1) Como criar sua branch
 - Entre nesse link: https://github.com/ViniciusDuranteBagio/OOPQuartaFase/branches
 - Aperte no botão "New Branch" para criar um nova branch
-- Deixe o nome da branch como "prova-seu-nome", e escolha para ser em cima da branch Prova no Source
+- Deixe o nome da branch como "prova-seu-nome", e escolha para ser em cima da branch OOPQuartaFase.src.Prova no Source
 - Vá no terminal do intelij e rode os seguintes comandos:
 - git fetch
 - git checkout prova-seu-nome (aqui é o nome da branch criada anteriormente)
