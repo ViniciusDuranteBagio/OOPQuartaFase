@@ -6,11 +6,10 @@ public class Pessoa {
     private int    idade1;
 
 
-    public Pessoa(String nome,int idade) {
+    public Pessoa(String nome,int idade1) {
         this.idade1 = idade1;
         this.nome = nome;
     }
-
 
     public void ExibirDetalhes(){
 
@@ -20,7 +19,7 @@ public class Pessoa {
         return nome;
     }
 
-    public int getIdade() {
+    public int getIdade1() {
         return idade1;
     }
 }

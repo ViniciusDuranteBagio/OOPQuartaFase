@@ -20,7 +20,7 @@ package Prova;
 
 
         @Override
-        public void apresentar() {
-            System.out.println("Olá, sou " + getNome() + ", tenho " + getIdade() + " anos e leciono " + disciplina);}
+        public void ExibirDetalhes() {
+            System.out.println("Olá, sou " + getNome() + ", tenho " + getIdade1() + " anos e leciono " + disciplina);}
     }
 
