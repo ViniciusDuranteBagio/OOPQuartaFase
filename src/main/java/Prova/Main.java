@@ -30,7 +30,7 @@ public class Main {
         //questao5
 
         /*public static void main(String[] args) {
-            Animal animal = new Animal("Rex", 5);
+            Animal animal = new Animal("cacau", 5);
             animal.fazerSom();*/
 
 
