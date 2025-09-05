@@ -7,7 +7,7 @@ public class Cachorro extends Animal {
 
     @Override
     public void fazerSom() {
-        System.out.println(getNome3() + ", " + getIdade() + " anos, está latindo: Pit Bull AuAu!");
+        System.out.println(getNome3() + ", " + getIdade() + " anos, está latindo: salsicha auauauau!");
     }
 
 }
