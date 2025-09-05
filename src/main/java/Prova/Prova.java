@@ -62,16 +62,6 @@ public class ContaBancaria {
 QUESTAO 5
 
 public class Animal
-    String nome;
-    int idade;
-
-public void fazerSom
-    System.out.println(nome + ",  " + idade  " quantos anos voce tem");
-    }
-
-
-}
-
 
 QUESTAO 6
 
