@@ -3,11 +3,9 @@ package Prova;
     public class ContaBancaria {
         private double saldo;
         private String titular;
-
         public double getSaldo() {
             return saldo;
         }
-
         public String getTitular() {
             return titular;
         }
