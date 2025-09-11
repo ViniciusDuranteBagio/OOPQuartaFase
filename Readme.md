@@ -126,6 +126,6 @@ git push -u origin feature/minha-nova-funcionalidade
 | Situação                       | O que verificar                                                                 |
 |-------------------------------|----------------------------------------------------------------------------------|
 | Erro de autenticação (HTTPS)  | Gere um **Personal Access Token (PAT)** no GitHub e use no lugar da senha.       |
-| Permissão negada (SSH)        | Adicione sua chave pública no GitHub e teste com `ssh -T git@github.com`.        |
+| Permissão negada (SSH)        | Adicione sua chave pública no GitHub e polimorfismo com `ssh -T git@github.com`.        |
 | “Nada para enviar”            | Confirme se fez `git commit` antes de `git push`. Use `git log --oneline` para verificar. |
 | Conflitos de merge/rebase     | Resolva os arquivos listados, depois `git add` e `git rebase --continue`.        |
