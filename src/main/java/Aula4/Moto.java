@@ -1,6 +1,6 @@
 package Aula4;
 
-public class Moto extends Veiculo {
+public abstract class Moto extends Veiculo {
     private int cilindrada;
     
     // Construtor

@@ -1,6 +1,6 @@
 package Aula4;
 
-public class Carro extends Veiculo {
+public abstract class Carro extends Veiculo {
     private int quantidadeDePortas;
     
     // Construtor
