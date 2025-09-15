@@ -1,0 +1,73 @@
+Exercício 1: Encapsulamento e Modificadores de Acesso
+Descrição:Crie uma classe chamada ContaBancaria com os seguintes atributos privados:
+numeroConta
+saldo
+titular
+O que fazer:
+Implemente métodos getters e setters para os atributos necessários, 
+não criar set para o saldo, os unicos que vai alterar o saldo é o depositar e o sacar.
+Crie um método depositar(double valor) que adiciona o valor ao saldo.
+Crie um método sacar(double valor) que subtrai o valor do saldo, desde que o saldo seja suficiente.
+Crie um método exibirSaldo() que mostra o saldo atual.
+Regras:
+O saldo não pode ser negativo.
+O número da conta não pode ser alterado após a criação do objeto.
+
+Exercício 2: Construtores e Sobrecarga
+Descrição:Crie uma classe chamada Pessoa com os seguintes atributos privados:
+nome
+idade
+cpf
+O que fazer:
+Implemente um construtor que recebe todos os atributos como parâmetros.
+Implemente um construtor que recebe apenas nome e idade, e define o CPF como "Desconhecido".
+Implemente um construtor padrão (sem parâmetros) que inicializa todos os atributos com valores padrão.
+Crie métodos getters e setters para todos os atributos.
+Crie um método exibirInformacoes() que mostra todos os dados da pessoa.
+
+Exercício 3: Encapsulamento e Validação
+Descrição:Crie uma classe chamada Produto com os seguintes atributos privados:
+nome
+preco
+quantidadeEmEstoque
+O que fazer:
+Implemente métodos getters e setters para todos os atributos.
+No método setPreco, valide se o preço é maior que zero. Caso contrário, exiba uma mensagem de erro.
+No método setQuantidadeEmEstoque, valide se a quantidade é maior ou igual a zero. Caso contrário, exiba uma mensagem de erro.
+Crie um método adicionarEstoque(int quantidade) que adiciona a quantidade ao estoque.
+Crie um método vender(int quantidade) que reduz a quantidade do estoque, desde que haja estoque suficiente.
+
+Exercício 4: Construtor e Encapsulamento
+Descrição:Crie uma classe chamada Aluno com os seguintes atributos privados:
+nome
+matricula
+nota
+O que fazer:
+Implemente um construtor que recebe nome e matricula como parâmetros e inicializa a nota com 0.
+Implemente métodos getters e setters para todos os atributos.
+No método setNota, valide se a nota está entre 0 e 10. Caso contrário, exiba uma mensagem de erro.
+Crie um método exibirStatus() que mostra o nome, matrícula e nota do aluno.
+
+Exercício 5: Encapsulamento e Métodos
+Descrição:Crie uma classe chamada Retangulo com os seguintes atributos privados:
+largura
+altura
+O que fazer:
+Implemente métodos getters e setters para todos os atributos.
+No método setLargura, valide se a largura é maior que zero. Caso contrário, exiba uma mensagem de erro.
+No método setAltura, valide se a altura é maior que zero. Caso contrário, exiba uma mensagem de erro.
+Crie um método calcularArea() que retorna a área do retângulo.
+Formula para calcular a area → largura * altura
+Crie um método calcularPerimetro() que retorna o perímetro do retângulo.
+Formula para calcular o perimetro → 2 * (altura + largura)
+
+Exercício 6: Construtor e Encapsulamento Avançado
+Descrição:Crie uma classe chamada Livro com os seguintes atributos privados:
+titulo
+autor
+anoPublicacao
+O que fazer:
+Implemente um construtor que recebe todos os atributos como parâmetros.
+Implemente métodos getters e setters para todos os atributos.
+No método setAnoPublicacao, valide se o ano é maior que 0. Caso contrário, exiba uma mensagem de erro.
+Crie um método exibirDetalhes() que mostra todos os dados do livro.
