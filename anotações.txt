@@ -1,3 +1,4 @@
+AULA1
 Classe e Objeto 
 Classe é o "molde" ou "planta" que define as características e comportamentos de algo. 
 Objeto é a "cópia concreta" feita a partir desse molde. 
@@ -36,3 +37,37 @@ Se chamarmos:
 	m1.rugir(); 
 O console mostra: 
 	O monstro rugiu!
+
+
+
+AULA2
+
+Repositório: É como uma pasta especial onde o Git guarda todos os arquivos e o histórico de mudanças do seu projeto.
+Commit: Salva o momento do projeto. Cada commit guarda quais arquivos mudaram e uma mensagem que explica a alteração.
+Branch: É uma ramificação do projeto, usada para trabalhar em algo novo sem mexer no código principal.
+Merge: É a união de branches. Junta as mudanças feitas em uma branch dentro de outra.
+Remote: É o repositório que fica na nuvem (ex: GitHub, GitLab). Serve para compartilhar seu código com outras pessoas.
+Clone: Baixa uma cópia completa de um repositório remoto para sua máquina.
+Pull: Traz as mudanças mais recentes do repositório remoto para o seu repositório local.
+Pull: Traz as mudanças mais recentes do repositório remoto para o seu repositório local.
+
+
+Encapsulamento
+"Esconde" os detalhes internos da classe e mostra apenas o que importa.
+Evita bagunça e protege os dados.
+Usa atributos privados (private) e métodos públicos (public) com getters e setters.
+
+
+Modificadores de Acesso
+private: só a própria classe vê.
+default: só classes no mesmo pacote.
+protected: mesmo pacote + subclasses.
+public: qualquer um pode acessar.
+
+
+Construtores
+Método especial chamado ao usar new.
+Inicializa os atributos.
+Tem o mesmo nome da classe e não tem retorno.
+Pode haver sobrecarga (vários construtores com parâmetros diferentes).
+
