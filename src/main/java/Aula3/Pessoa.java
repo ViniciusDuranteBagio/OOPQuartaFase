@@ -5,28 +5,24 @@ public class Pessoa {
     private int idade;
     private String cpf;
     
-    // Construtor com todos os parâmetros
     public Pessoa(String nome, int idade, String cpf) {
         this.nome = nome;
         this.idade = idade;
         this.cpf = cpf;
     }
     
-    // Construtor com nome e idade apenas
     public Pessoa(String nome, int idade) {
         this.nome = nome;
         this.idade = idade;
         this.cpf = "Desconhecido";
     }
     
-    // Construtor padrão
     public Pessoa() {
         this.nome = "Sem nome";
         this.idade = 0;
         this.cpf = "Desconhecido";
     }
     
-    // Getters e Setters
     public String getNome() {
         return nome;
     }
@@ -53,10 +49,9 @@ public class Pessoa {
     
     // Método para exibir informações
     public void exibirInformacoes() {
-        System.out.println("=== Informações da Pessoa ===");
+        System.out.println("Informações:");
         System.out.println("Nome: " + this.nome);
         System.out.println("Idade: " + this.idade);
         System.out.println("CPF: " + this.cpf);
-        System.out.println("============================");
     }
 } 

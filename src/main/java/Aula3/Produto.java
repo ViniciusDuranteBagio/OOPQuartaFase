@@ -5,14 +5,12 @@ public class Produto {
     private double preco;
     private int quantidadeEmEstoque;
     
-    // Construtor
     public Produto(String nome, double preco, int quantidadeEmEstoque) {
         this.nome = nome;
         this.preco = preco;
         this.quantidadeEmEstoque = quantidadeEmEstoque;
     }
     
-    // Getters e Setters
     public String getNome() {
         return nome;
     }
@@ -29,7 +27,7 @@ public class Produto {
         if (preco > 0) {
             this.preco = preco;
         } else {
-            System.out.println("Erro: O preço deve ser maior que zero.");
+            System.out.println("Erro! Valor inválido!");
         }
     }
     
@@ -41,7 +39,7 @@ public class Produto {
         if (quantidadeEmEstoque >= 0) {
             this.quantidadeEmEstoque = quantidadeEmEstoque;
         } else {
-            System.out.println("Erro: A quantidade em estoque deve ser maior ou igual a zero.");
+            System.out.println("Erro! Valor inválido!");
         }
     }
     
@@ -51,7 +49,7 @@ public class Produto {
             this.quantidadeEmEstoque += quantidade;
             System.out.println("Adicionados " + quantidade + " itens ao estoque.");
         } else {
-            System.out.println("Erro: Quantidade para adicionar deve ser maior que zero.");
+            System.out.println("Erro! Valor inválido!");
         }
     }
     
@@ -61,19 +59,17 @@ public class Produto {
                 this.quantidadeEmEstoque -= quantidade;
                 System.out.println("Vendidos " + quantidade + " itens. Valor total: R$ " + (quantidade * this.preco));
             } else {
-                System.out.println("Erro: Estoque insuficiente. Disponível: " + this.quantidadeEmEstoque);
+                System.out.println("Erro: Estoque insuficiente!");
             }
         } else {
-            System.out.println("Erro: Quantidade para venda deve ser maior que zero.");
+            System.out.println("Erro! Valor inválido!");
         }
     }
     
-    // Método para exibir informações do produto
     public void exibirInformacoes() {
-        System.out.println("=== Informações do Produto ===");
+        System.out.println("Informações do Produto:");
         System.out.println("Nome: " + this.nome);
         System.out.println("Preço: R$ " + this.preco);
         System.out.println("Quantidade em estoque: " + this.quantidadeEmEstoque);
-        System.out.println("==============================");
     }
 } 

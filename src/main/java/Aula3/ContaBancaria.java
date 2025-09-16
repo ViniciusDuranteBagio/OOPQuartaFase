@@ -5,14 +5,12 @@ public class ContaBancaria {
     private double saldo;
     private String titular;
     
-    // Construtor
     public ContaBancaria(String numeroConta, String titular) {
         this.numeroConta = numeroConta;
         this.titular = titular;
         this.saldo = 0.0;
     }
     
-    // Getters e Setters
     public String getNumeroConta() {
         return numeroConta;
     }
@@ -35,7 +33,7 @@ public class ContaBancaria {
             this.saldo += valor;
             System.out.println("Depósito de R$ " + valor + " realizado com sucesso!");
         } else {
-            System.out.println("Erro: Valor para depósito deve ser maior que zero.");
+            System.out.println("Erro! Valor inválido!");
         }
     }
     
@@ -45,14 +43,14 @@ public class ContaBancaria {
                 this.saldo -= valor;
                 System.out.println("Saque de R$ " + valor + " realizado com sucesso!");
             } else {
-                System.out.println("Erro: Saldo insuficiente para realizar o saque.");
+                System.out.println("Saldo insuficiente!");
             }
         } else {
-            System.out.println("Erro: Valor para saque deve ser maior que zero.");
+            System.out.println("Erro! Valor inválido!");
         }
     }
     
     public void exibirSaldo() {
-        System.out.println("Saldo atual da conta: R$ " + this.saldo);
+        System.out.println("Saldo atual: R$ " + this.saldo);
     }
 } 
