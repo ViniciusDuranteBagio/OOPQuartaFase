@@ -1,0 +1,9 @@
+public class Carro extends Veiculo {
+    Carro(String placa, String modelo) {
+        super(placa, modelo);
+    }
+
+    double calcularConsumo() {
+        return 12; // km/l
+    }
+}

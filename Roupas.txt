@@ -1,0 +1,9 @@
+public class Roupas extends Produto {
+    Roupas(String nome, double preco) {
+        super(nome, preco);
+    }
+
+    double calcularFrete() {
+        return 10; // Fixo
+    }
+}

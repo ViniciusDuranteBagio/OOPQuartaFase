@@ -1,0 +1,5 @@
+public class ValidadorCPF implements Validador {
+    public boolean validar(String cpf) {
+        return cpf != null && cpf.matches("\\d{11}"); // Simplificado
+    }
+}

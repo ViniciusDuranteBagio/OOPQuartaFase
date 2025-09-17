@@ -1,0 +1,9 @@
+public class Livro extends Produto {
+    Livro(String nome, double preco) {
+        super(nome, preco);
+    }
+
+    double calcularFrete() {
+        return 5; // Fixo
+    }
+}

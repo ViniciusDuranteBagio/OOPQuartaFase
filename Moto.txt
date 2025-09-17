@@ -1,0 +1,9 @@
+public class Moto extends Veiculo {
+    Moto(String placa, String modelo) {
+        super(placa, modelo);
+    }
+
+    double calcularConsumo() {
+        return 30; // km/l
+    }
+}

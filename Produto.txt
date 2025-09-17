@@ -1,0 +1,15 @@
+public abstract class Produto {
+    String nome;
+    double preco;
+
+    Produto(String nome, double preco) {
+        this.nome = nome;
+        this.preco = preco;
+    }
+
+    abstract double calcularFrete();
+
+    void exibirResumo() {
+        System.out.println("Nome: " + nome + ", Preço: " + preco + ", Frete: " + calcularFrete());
+    }
+}

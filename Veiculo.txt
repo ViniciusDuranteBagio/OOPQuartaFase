@@ -1,0 +1,18 @@
+public abstract class Veiculo {
+    String placa, modelo;
+
+    Veiculo(String placa, String modelo) {
+        this.placa = placa;
+        this.modelo = modelo;
+    }
+
+    void ligarMotor() {
+        System.out.println(modelo + ": Motor ligado");
+    }
+
+    void abastecer() {
+        System.out.println(modelo + ": Abastecido");
+    }
+
+    abstract double calcularConsumo();
+}

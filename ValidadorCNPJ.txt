@@ -1,0 +1,5 @@
+public class ValidadorCNPJ implements Validador {
+    public boolean validar(String cnpj) {
+        return cnpj != null && cnpj.matches("\\d{14}"); // Simplificado
+    }
+}

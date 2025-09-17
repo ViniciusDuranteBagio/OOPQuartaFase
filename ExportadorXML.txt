@@ -1,0 +1,5 @@
+public class ExportadorXML implements Exportador {
+    public void exportar(String dados) {
+        System.out.println("XML: <dados>" + dados + "</dados>");
+    }
+}

@@ -1,0 +1,5 @@
+public class Cartao implements FormaPagamento {
+    public void processarPagamento(double valor) {
+        System.out.println("Pago R$" + valor + " via Cartão");
+    }
+}

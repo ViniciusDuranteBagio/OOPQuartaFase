@@ -1,0 +1,9 @@
+public class Eletronico extends Produto {
+    Eletronico(String nome, double preco) {
+        super(nome, preco);
+    }
+
+    double calcularFrete() {
+        return preco * 0.1; // 10%
+    }
+}
