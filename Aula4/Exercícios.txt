@@ -1,0 +1,59 @@
+1: Criando uma herança básica
+Crie uma classe Pessoa com os atributos nome e idade.
+Depois, crie uma classe Aluno que herda Pessoa e adiciona o atributo matricula.
+No main(), crie um objeto Aluno, atribua valores e imprima as informações.
+
+2: Utilizando o super() no Construtor
+Expanda o exercício anterior e adicione um construtor em Pessoa que recebe nome e idade.
+Na classe Aluno, crie um construtor que use super(nome, idade) e também inicialize matricula.
+No main(), instancie um Aluno passando os três atributos e imprima os valores.
+
+3: Criando uma Hierarquia de Veículos
+Crie uma classe Veiculo com os atributos marca e modelo.
+Depois, crie as subclasses Carro e Moto, 
+cada uma com um atributo específico(quantidadeDePortas para Carro e cilindrada para Moto).
+No main(), crie objetos de Carro e Moto e exiba seus detalhes.
+
+4: Adicionando Métodos em Herança
+Crie uma classe Animal com os atributos nome e idade,
+além de um método dormir() que imprime "O animal está dormindo".
+Depois, crie uma subclasse Cachorro que adiciona um método latir() imprimindo "O cachorro está latindo".
+No main(), crie um Cachorro, chame dormir() e latir().
+
+5: Protegendo Atributos com protected
+Modifique o exercício anterior e torne os atributos nome e idade protected na classe Animal.
+Depois, crie um método exibirInformacoes() em Animal para exibir nome e idade.
+Na classe Cachorro, crie um método brincar(), que imprime "O cachorro [nome] está brincando!".
+No main(), crie um cachorro e teste os métodos.
+
+6: Criando uma Classe com um Método Compartilhado
+Crie uma classe Funcionario com os atributos nome e salario.
+Adicione um método aumentarSalario(double porcentagem) que aumenta o salário com base na porcentagem.
+Depois, crie uma subclasse Gerente que adiciona o atributo departamento.
+No main(), crie um Gerente, aumente seu salário e exiba as informações.
+
+7: Chamando Métodos da Superclasse com super
+Crie uma classe Produto com os atributos nome e preco.
+Adicione um método exibirDetalhes() que imprime essas informações.
+Crie uma subclasse Eletronico com um atributo garantiaEmMeses.
+Na subclasse, sobrescreva exibirDetalhes(), 
+mas chame o método da superclasse usando super.exibirDetalhes() antes de imprimir a garantia.
+No main(), crie um Eletronico e chame exibirDetalhes().
+
+8: Criando uma Hierarquia de Contas Bancárias
+Crie uma classe ContaBancaria com os atributos titular e saldo.Depois, crie duas subclasses:
+ContaCorrente, que tem um atributo taxaManutencao.
+ContaPoupanca, que tem um atributo taxaJuros.
+No main(), crie uma ContaCorrente e uma ContaPoupanca, atribua valores e exiba os detalhes.
+
+9: Criando uma Classe Base para Jogos
+Crie uma classe Personagem com os atributos nome e nivel.Depois, crie duas subclasses:
+Guerreiro, que adiciona forca.
+Mago, que adiciona mana.
+No main(), crie um Guerreiro e um Mago, atribua valores e exiba as informações.
+
+10: Trabalhando com Construtores em Cadeia
+Crie uma classe Empresa com os atributos nome e cidade.
+Crie uma subclasse Loja, que adiciona o atributo tipoDeProduto.
+No construtor de Loja, chame super(nome, cidade) para inicializar os atributos da superclasse.
+No main(), crie uma Loja e imprima seus dados.
