@@ -1,5 +1,5 @@
 package Aula5;
 
 public interface IMetodoPagamento {
-    void Cobrar();
+    void Cobrar(double valor);
 }
