@@ -10,6 +10,9 @@ public class Produto {
 
     }
 
+    public Produto() {
+    }
+
     protected void ExibirDados() {
         System.out.println("O produto " + nome + " está com o valor " + preco);
     }
