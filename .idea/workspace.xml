@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="9d94860e-a15f-4c11-b05d-3e76ce4f8d1e" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/AtividadesPOO/Aluno.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AtividadesPOO/ContaBancaria.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AtividadesPOO/Livros.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AtividadesPOO/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AtividadesPOO/Pessoa.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AtividadesPOO/Produto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AtividadesPOO/Retangulo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AtividadesPOO2/Animal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AtividadesPOO2/ContaBancaria.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AtividadesPOO2/Empresa.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AtividadesPOO2/Funcionario.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AtividadesPOO2/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AtividadesPOO2/Personagem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AtividadesPOO2/Pessoa.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AtividadesPOO2/Produto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AtividadesPOO2/Veiculo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AtividadesPOO3/Exportador.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AtividadesPOO3/Funcionario.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AtividadesPOO3/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AtividadesPOO3/Pagamento.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AtividadesPOO3/Produto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AtividadesPOO3/Validador.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AtividadesPOO3/Veiculo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Prova/Atividade01.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Prova/Animal2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Prova/Animal2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Prova/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Prova/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Prova/Pessoa1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Prova/Pessoa1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/org/example/ExemploTest.class" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
+  <component name="ProjectId" id="31tE3QygXnzSVSK4YRccAg5HAxm" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Atividade01.executor": "Run",
+    "Application.AtividadesPOO.Main.executor": "Run",
+    "Application.AtividadesPOO2.Main.executor": "Run",
+    "Application.ImpressaoDocumentos.executor": "Run",
+    "Application.Main (1).executor": "Run",
+    "Application.Main.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "Gabriel-BaggioProva",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/Gabriel Baggio/IdeaProjects/Recursividade",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Gabriel Baggio\IdeaProjects\OOPQuartaFase\src\main\java\Prova" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="AtividadesPOO2.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="AtividadesPOO2.Main" />
+      <module name="Aula1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="AtividadesPOO2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AtividadesPOO.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="AtividadesPOO.Main" />
+      <module name="Aula1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="AtividadesPOO.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ImpressaoDocumentos" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ImpressaoDocumentos" />
+      <module name="Aula1" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="UNNAMED_CLASS_CONFIGURATION" value="true" />
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="Aula1" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="AtividadesPOO3.Main" />
+      <module name="Aula1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="AtividadesPOO3.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="OOPQuartaFase" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="OOPQuartaFase" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.AtividadesPOO2.Main" />
+        <item itemvalue="Application.AtividadesPOO.Main" />
+        <item itemvalue="Application.ImpressaoDocumentos" />
+        <item itemvalue="Application.Main (1)" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9d94860e-a15f-4c11-b05d-3e76ce4f8d1e" name="Changes" comment="" />
+      <created>1756334768561</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1756334768561</updated>
+    </task>
+    <servers />
+  </component>
+</project>
