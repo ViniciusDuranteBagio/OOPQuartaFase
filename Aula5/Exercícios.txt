@@ -1,0 +1,31 @@
+Exercícios
+Exercício 1 – Funcionários de uma empresa
+Implemente uma estrutura para representar diferentes tipos de funcionários: 
+Gerente, Desenvolvedor, Estagiário. 
+Todos eles possuem nome, salário base e devem ter um método calcularSalario(), 
+que varia de acordo com o cargo. 
+Além disso, existe um método comum exibirDados().
+
+Exercício 2 – Veículos
+Construa um sistema que represente diferentes tipos de veículos: 
+Carro, Moto e Caminhão. Todos têm atributos como placa, modelo e métodos como ligarMotor() e abastecer().
+E um método calcularConsumo() deve ser diferente para cada tipo.
+
+Exercício 3 – Produtos de um ecommerce
+Você precisa modelar produtos de uma loja virtual: 
+Livro, Eletrônico e Roupas. Cada produto tem atributos em comum como nome e preço, 
+e devem implementar um método calcularFrete() diferente. 
+Também existe um método exibirResumo().
+
+Exercício 4 – Formas de pagamento
+Implemente um sistema de pagamento onde cada forma (Cartão, Boleto, Pix)
+ tem um método processarPagamento(). 
+O objetivo é garantir que qualquer novo tipo de pagamento implemente esse método.
+
+Exercício 5 – Exportadores de arquivo
+Implemente um componente capaz de exportar dados em vários formatos:
+PDF, CSV e XML. Cada exportador deve implementar um método exportar(dados).
+
+Exercício 6 – Validações de dados
+Construa um sistema com vários validadores: 
+Validador de CPF, de Email e de CNPJ. Cada um implementa validar(String valor) com sua própria lógica.
