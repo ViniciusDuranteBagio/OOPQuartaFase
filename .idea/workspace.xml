@@ -5,34 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9d94860e-a15f-4c11-b05d-3e76ce4f8d1e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/AtividadesPOO/Aluno.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/AtividadesPOO/ContaBancaria.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/AtividadesPOO/Livros.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/AtividadesPOO/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/AtividadesPOO/Pessoa.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/AtividadesPOO/Produto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/AtividadesPOO/Retangulo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/AtividadesPOO2/Animal.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/AtividadesPOO2/ContaBancaria.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/AtividadesPOO2/Empresa.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/AtividadesPOO2/Funcionario.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/AtividadesPOO2/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/AtividadesPOO2/Personagem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/AtividadesPOO2/Pessoa.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/AtividadesPOO2/Produto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/AtividadesPOO2/Veiculo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/AtividadesPOO3/Exportador.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/AtividadesPOO3/Funcionario.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/AtividadesPOO3/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/AtividadesPOO3/Pagamento.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/AtividadesPOO3/Produto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/AtividadesPOO3/Validador.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/AtividadesPOO3/Veiculo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Prova/Atividade01.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Prova/Animal2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Prova/Animal2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Prova/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Prova/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Prova/Pessoa1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Prova/Pessoa1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/org/example/ExemploTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,7 +42,7 @@
     "Application.Main (1).executor": "Run",
     "Application.Main.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "Gabriel-BaggioProva",
+    "git-widget-placeholder": "atividade-gabriel-baggio",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/Gabriel Baggio/IdeaProjects/Recursividade",
     "project.structure.last.edited": "Modules",
