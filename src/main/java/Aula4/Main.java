@@ -21,18 +21,18 @@ public class Main {
         aluno2.exibirInformacoes();
         System.out.println();
         
-        // Exercício 3: Hierarquia de Veículos
-        System.out.println("EXERCÍCIO 3 - Hierarquia de Veículos:");
-        Carro carro = new Carro("Toyota", "Corolla", 4);
-        Moto moto = new Moto("Honda", "CG 150", 150);
-        
-        System.out.println("=== Detalhes do Carro ===");
-        carro.exibirDetalhes();
-        System.out.println();
-        
-        System.out.println("=== Detalhes da Moto ===");
-        moto.exibirDetalhes();
-        System.out.println();
+//        // Exercício 3: Hierarquia de Veículos
+////        System.out.println("EXERCÍCIO 3 - Hierarquia de Veículos:");
+////        Carro carro = new Carro("Toyota", "Corolla", 4);
+////        Moto moto = new Moto("Honda", "CG 150", 150);
+////
+//        System.out.println("=== Detalhes do Carro ===");
+//        carro.exibirDetalhes();
+//        System.out.println();
+//
+//        System.out.println("=== Detalhes da Moto ===");
+//        moto.exibirDetalhes();
+//        System.out.println();
         
         // Exercício 4: Adicionando métodos em herança
         System.out.println("EXERCÍCIO 4 - Adicionando métodos em herança:");
