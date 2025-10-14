@@ -1,7 +1,5 @@
 package Aula06;
 
-import Aula4.ContaCorrente;
-
 import javax.swing.*;
 
 public class Main {
@@ -103,8 +101,78 @@ public class Main {
 //            System.out.println(e.getMessage());
 //        }
 //        System.out.println("-----------------------------------------------------------------------\n");
+//
+//        //exercicio 7
+//        System.out.println("========ATIVIDADE 7========\n");
+//        Usuario usuario = new Usuario();
+//
+//       String entrada = JOptionPane.showInputDialog("Digite seu nome: ");
+//        if (entrada == null) {
+//            JOptionPane.showMessageDialog(null, "Operacao cancelada!");
+//            return;
+//        }
+//        try {
+//            usuario.setNome(entrada);
+//            JOptionPane.showMessageDialog(null, "Nome: " + usuario.getNome());
+//            System.out.println("Nome: " + usuario.getNome());
+//        } catch (NomeInvalidoException e) {
+//            JOptionPane.showMessageDialog(null, e.getMessage());
+//        }
+//        System.out.println("-----------------------------------------------------------------------\n");
+//
+//        //exercicio 8
+//        System.out.println("========ATIVIDADE 8========\n");
+//        Operacoes operacoes = new Operacoes();
+//
+//        String stringNumerador = JOptionPane.showInputDialog("Numerador:");
+//        if (stringNumerador == null) return;
+//        String stringDenominador = JOptionPane.showInputDialog("Divisor:");
+//        if (stringDenominador == null) return;
+//
+//        try {
+//            int a = operacoes.toInt(stringNumerador);
+//            int b = operacoes.toInt(stringDenominador);
+//            int resultado = operacoes.dividir(a, b);
+//            JOptionPane.showMessageDialog(null, "Resultado: " + resultado);
+//            System.out.println("Resultado: " + resultado);
+//        } catch (NumberFormatException e) {
+//            JOptionPane.showMessageDialog(null, "Valor invalido: digite inteiros.");
+//        } catch (ArithmeticException e) {
+//            JOptionPane.showMessageDialog(null, e.getMessage());
+//        }
+//        System.out.println("-----------------------------------------------------------------------\n");
+//
+//        //exercicio 9
+//        System.out.println("========ATIVIDADE 9========\n");
+//        ValidadorDocumento validador = new ValidadorDocumento();
+//
+//        String entrada = JOptionPane.showInputDialog("Digite o CPF: ");
+//        if (entrada == null) return;
+//
+//        try {
+//            validador.validarCpf(entrada);
+//            JOptionPane.showMessageDialog(null, "CPF valido");
+//            System.out.println("CPF valido");
+//        } catch (DocumentoInvalidoException e) {
+//            JOptionPane.showMessageDialog(null, e.getMessage());
+//        }
+//        System.out.println("-----------------------------------------------------------------------\n");
 
-        //exercicio 7
-        System.out.println("========ATIVIDADE 7========\n");
+        //exercicio 10
+        System.out.println("========ATIVIDADE 10========\n");
+        Login login = new Login();
+
+        String usuario = JOptionPane.showInputDialog(null, "Usuario:");
+        if (usuario == null) return;
+        String senha = JOptionPane.showInputDialog(null, "Senha:");
+        if (senha == null) return;
+
+        try {
+            login.autenticar(usuario.trim(), senha);
+            JOptionPane.showMessageDialog(null, "Login OK!");
+        } catch (UsuarioNaoEncontradoException | SenhaIncorretaException e) {
+            JOptionPane.showMessageDialog(null, e.getMessage());
+        }
+        System.out.println("-----------------------------------------------------------------------\n");
     }
 }
