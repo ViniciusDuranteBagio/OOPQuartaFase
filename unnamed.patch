@@ -1,0 +1,390 @@
+Index: src/main/java/Aula6/Exercicios/Calculadora.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/Aula6/Exercicios/Calculadora.java b/src/main/java/Aula6/Exercicios/Calculadora.java
+new file mode 100644
+--- /dev/null	(date 1761257850847)
++++ b/src/main/java/Aula6/Exercicios/Calculadora.java	(date 1761257850847)
+@@ -0,0 +1,18 @@
++import java.util.Scanner;
++
++public class Calculadora {
++    public static void main(String[] args) {
++        Scanner sc = new Scanner(System.in);
++        System.out.print("Digite o dividendo: ");
++        double a = sc.nextDouble();
++        System.out.print("Digite o divisor: ");
++        double b = sc.nextDouble();
++
++        try {
++            double resultado = a / b;
++            System.out.println("Resultado: " + resultado);
++        } catch (ArithmeticException e) {
++            System.out.println("Erro: não é possível dividir por zero!");
++        }
++    }
++}
+\ No newline at end of file
+Index: src/main/java/Aula6/Exercicios/CalculadoraMatematica.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/Aula6/Exercicios/CalculadoraMatematica.java b/src/main/java/Aula6/Exercicios/CalculadoraMatematica.java
+new file mode 100644
+--- /dev/null	(date 1761257850851)
++++ b/src/main/java/Aula6/Exercicios/CalculadoraMatematica.java	(date 1761257850851)
+@@ -0,0 +1,15 @@
++import java.util.Scanner;
++
++public class CalculadoraMatematica {
++    public static void main(String[] args) {
++        Scanner sc = new Scanner(System.in);
++        System.out.print("Digite um número: ");
++        double num = sc.nextDouble();
++
++        if (num < 0) {
++            System.out.println("Erro: não existe raiz real de número negativo!");
++        } else {
++            System.out.println("Raiz quadrada: " + Math.sqrt(num));
++        }
++    }
++}
+\ No newline at end of file
+Index: src/main/java/Aula6/Exercicios/Conta.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/Aula6/Exercicios/Conta.java b/src/main/java/Aula6/Exercicios/Conta.java
+new file mode 100644
+--- /dev/null	(date 1761257850856)
++++ b/src/main/java/Aula6/Exercicios/Conta.java	(date 1761257850856)
+@@ -0,0 +1,18 @@
++import java.util.Scanner;
++
++public class Conta {
++    public static void main(String[] args) {
++        double saldo = 100.0;
++        Scanner sc = new Scanner(System.in);
++
++        System.out.print("Digite o valor do saque: ");
++        double valor = sc.nextDouble();
++
++        if (valor > saldo) {
++            System.out.println("Erro: saldo insuficiente!");
++        } else {
++            saldo -= valor;
++            System.out.println("Saque realizado! Saldo atual: " + saldo);
++        }
++    }
++}
+\ No newline at end of file
+Index: src/main/java/Aula6/Exercicios/ContaBancaria.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/Aula6/Exercicios/ContaBancaria.java b/src/main/java/Aula6/Exercicios/ContaBancaria.java
+new file mode 100644
+--- /dev/null	(date 1761257850860)
++++ b/src/main/java/Aula6/Exercicios/ContaBancaria.java	(date 1761257850860)
+@@ -0,0 +1,27 @@
++import java.util.Scanner;
++
++public class ContaBancaria {
++    public static void main(String[] args) {
++        Scanner sc = new Scanner(System.in);
++        double saldo = 200;
++
++        System.out.print("Valor a depositar: ");
++        double deposito = sc.nextDouble();
++
++        if (deposito < 0) {
++            System.out.println("Erro: valor de depósito não pode ser negativo!");
++            return;
++        }
++        saldo += deposito;
++
++        System.out.print("Valor a sacar: ");
++        double saque = sc.nextDouble();
++
++        if (saque > saldo) {
++            System.out.println("Erro: saldo insuficiente!");
++        } else {
++            saldo -= saque;
++            System.out.println("Transação concluída! Saldo final: " + saldo);
++        }
++    }
++}
+\ No newline at end of file
+Index: src/main/java/Aula6/Exercicios/Conversor.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/Aula6/Exercicios/Conversor.java b/src/main/java/Aula6/Exercicios/Conversor.java
+new file mode 100644
+--- /dev/null	(date 1761257850864)
++++ b/src/main/java/Aula6/Exercicios/Conversor.java	(date 1761257850864)
+@@ -0,0 +1,21 @@
++import java.util.Scanner;
++
++public class Conversor {
++    public static void main(String[] args) {
++        Scanner sc = new Scanner(System.in);
++        int numero = 0;
++        boolean valido = false;
++
++        while (!valido) {
++            System.out.print("Digite um número inteiro: ");
++            String entrada = sc.nextLine();
++            try {
++                numero = Integer.parseInt(entrada);
++                valido = true;
++            } catch (Exception e) {
++                System.out.println("Valor inválido, tente novamente!");
++            }
++        }
++        System.out.println("Número digitado: " + numero);
++    }
++}
+\ No newline at end of file
+Index: src/main/java/Aula6/Exercicios/ErroComCodigo.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/Aula6/Exercicios/ErroComCodigo.java b/src/main/java/Aula6/Exercicios/ErroComCodigo.java
+new file mode 100644
+--- /dev/null	(date 1761258221247)
++++ b/src/main/java/Aula6/Exercicios/ErroComCodigo.java	(date 1761258221247)
+@@ -0,0 +1,7 @@
++public class ErroComCodigo {
++    public static void main(String[] args) {
++        int codigoErro = 404;
++        String mensagem = "Recurso não encontrado";
++        System.out.println("Erro [" + codigoErro + "]: " + mensagem);
++    }
++}
+\ No newline at end of file
+Index: src/main/java/Aula6/Exercicios/Login.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/Aula6/Exercicios/Login.java b/src/main/java/Aula6/Exercicios/Login.java
+new file mode 100644
+--- /dev/null	(date 1761257850867)
++++ b/src/main/java/Aula6/Exercicios/Login.java	(date 1761257850867)
+@@ -0,0 +1,33 @@
++import java.util.Scanner;
++
++public class Login {
++    public static void main(String[] args) {
++        Scanner sc = new Scanner(System.in);
++        String[][] usuarios = {
++            {"admin", "1234"},
++            {"user", "abcd"}
++        };
++
++        System.out.print("Usuário: ");
++        String login = sc.nextLine();
++        System.out.print("Senha: ");
++        String senha = sc.nextLine();
++
++        boolean achou = false;
++        for (String[] u : usuarios) {
++            if (u[0].equals(login)) {
++                achou = true;
++                if (u[1].equals(senha)) {
++                    System.out.println("Login bem-sucedido!");
++                } else {
++                    System.out.println("Senha incorreta!");
++                }
++                break;
++            }
++        }
++
++        if (!achou) {
++            System.out.println("Usuário não encontrado!");
++        }
++    }
++}
+\ No newline at end of file
+Index: src/main/java/Aula6/Exercicios/Operacoes.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/Aula6/Exercicios/Operacoes.java b/src/main/java/Aula6/Exercicios/Operacoes.java
+new file mode 100644
+--- /dev/null	(date 1761257850813)
++++ b/src/main/java/Aula6/Exercicios/Operacoes.java	(date 1761257850813)
+@@ -0,0 +1,21 @@
++import java.util.Scanner;
++
++public class Operacoes {
++    public static void main(String[] args) {
++        Scanner sc = new Scanner(System.in);
++        try {
++            System.out.print("Digite o primeiro número: ");
++            double a = Double.parseDouble(sc.nextLine());
++            System.out.print("Digite o segundo número: ");
++            double b = Double.parseDouble(sc.nextLine());
++
++            if (b == 0) {
++                System.out.println("Erro: não é possível dividir por zero!");
++            } else {
++                System.out.println("Resultado: " + (a / b));
++            }
++        } catch (Exception e) {
++            System.out.println("Erro: digite apenas números válidos!");
++        }
++    }
++}
+\ No newline at end of file
+Index: src/main/java/Aula6/Exercicios/Pessoa.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/Aula6/Exercicios/Pessoa.java b/src/main/java/Aula6/Exercicios/Pessoa.java
+new file mode 100644
+--- /dev/null	(date 1761257850818)
++++ b/src/main/java/Aula6/Exercicios/Pessoa.java	(date 1761257850818)
+@@ -0,0 +1,19 @@
++import java.util.Scanner;
++
++public class Pessoa {
++    public static void main(String[] args) {
++        Scanner sc = new Scanner(System.in);
++        System.out.print("Digite sua idade: ");
++
++        try {
++            int idade = sc.nextInt();
++            if (idade < 0) {
++                System.out.println("Erro: idade não pode ser negativa!");
++            } else {
++                System.out.println("Idade cadastrada: " + idade);
++            }
++        } catch (Exception e) {
++            System.out.println("Valor inválido!");
++        }
++    }
++}
+\ No newline at end of file
+Index: src/main/java/Aula6/Exercicios/Usuario.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/Aula6/Exercicios/Usuario.java b/src/main/java/Aula6/Exercicios/Usuario.java
+new file mode 100644
+--- /dev/null	(date 1761257850830)
++++ b/src/main/java/Aula6/Exercicios/Usuario.java	(date 1761257850830)
+@@ -0,0 +1,15 @@
++import java.util.Scanner;
++
++public class Usuario {
++    public static void main(String[] args) {
++        Scanner sc = new Scanner(System.in);
++        System.out.print("Digite seu nome: ");
++        String nome = sc.nextLine();
++
++        if (nome == null || nome.trim().isEmpty()) {
++            System.out.println("Erro: nome não pode ser vazio!");
++        } else {
++            System.out.println("Nome cadastrado: " + nome);
++        }
++    }
++}
+\ No newline at end of file
+Index: src/main/java/Aula6/Exercicios/ValidadorDocumento.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/Aula6/Exercicios/ValidadorDocumento.java b/src/main/java/Aula6/Exercicios/ValidadorDocumento.java
+new file mode 100644
+--- /dev/null	(date 1761257850835)
++++ b/src/main/java/Aula6/Exercicios/ValidadorDocumento.java	(date 1761257850835)
+@@ -0,0 +1,15 @@
++import java.util.Scanner;
++
++public class ValidadorDocumento {
++    public static void main(String[] args) {
++        Scanner sc = new Scanner(System.in);
++        System.out.print("Digite o CPF (11 dígitos): ");
++        String cpf = sc.nextLine();
++
++        if (cpf.length() == 11) {
++            System.out.println("CPF válido!");
++        } else {
++            System.out.println("Erro: CPF inválido! Deve ter 11 números.");
++        }
++    }
++}
+\ No newline at end of file
+Index: src/main/java/Aula6/Exercicios/ValidadorEntrada.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/Aula6/Exercicios/ValidadorEntrada.java b/src/main/java/Aula6/Exercicios/ValidadorEntrada.java
+new file mode 100644
+--- /dev/null	(date 1761257850839)
++++ b/src/main/java/Aula6/Exercicios/ValidadorEntrada.java	(date 1761257850839)
+@@ -0,0 +1,21 @@
++import java.util.Scanner;
++
++public class ValidadorEntrada {
++    public static void main(String[] args) {
++        Scanner sc = new Scanner(System.in);
++        int numero = -1;
++
++        while (true) {
++            System.out.print("Digite um número positivo: ");
++            try {
++                numero = Integer.parseInt(sc.nextLine());
++                if (numero >= 0) break;
++                else System.out.println("Erro: número negativo!");
++            } catch (Exception e) {
++                System.out.println("Valor inválido!");
++            }
++        }
++
++        System.out.println("Número válido: " + numero);
++    }
++}
+\ No newline at end of file
+Index: src/main/java/Aula6/Exercicios/VetorNumeros.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/Aula6/Exercicios/VetorNumeros.java b/src/main/java/Aula6/Exercicios/VetorNumeros.java
+new file mode 100644
+--- /dev/null	(date 1761257850843)
++++ b/src/main/java/Aula6/Exercicios/VetorNumeros.java	(date 1761257850843)
+@@ -0,0 +1,17 @@
++import java.util.Scanner;
++
++public class VetorNumeros {
++    public static void main(String[] args) {
++        int[] numeros = {10, 20, 30, 40, 50};
++        Scanner sc = new Scanner(System.in);
++
++        System.out.print("Digite um índice (0 a 4): ");
++        int indice = sc.nextInt();
++
++        try {
++            System.out.println("Valor: " + numeros[indice]);
++        } catch (Exception e) {
++            System.out.println("Erro: índice inválido! Deve estar entre 0 e 4.");
++        }
++    }
++}
+\ No newline at end of file
