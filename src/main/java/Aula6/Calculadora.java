@@ -5,10 +5,10 @@ Se o divisor for zero, deve ser tratado o erro e mostrar uma mensagem dizendo qu
 Calculadora (responsável pela operação de divisão)*/
 
 public class Calculadora {
-    public double dividir(double a, double b){
+    public double dividir(int a, int b){
          if(b==0){
         throw new ArithmeticException("O divisor não pode ser 0.");
     }
-    return a/b;
+    return (double) a /b;
     }
 }

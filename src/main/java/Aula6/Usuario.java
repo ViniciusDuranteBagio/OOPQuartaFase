@@ -6,15 +6,10 @@ NomeInvalidoException
  */
 
 public class Usuario {
-    private String nome;
-
-    public void setNome (String nome) throws NomeInvalidoException {
-        if ( nome == null || nome.trim().isEmpty()) {
+    public String nome;
+    Usuario(String nomeInicial){
+        if(nomeInicial== null || nomeInicial.isEmpty()){
             throw new NomeInvalidoException("O nome não pode ser nulo ou vazio");
         }
-        this.nome = nome;
-    }
-    public String getNome () {
-        return nome;
     }
 }
