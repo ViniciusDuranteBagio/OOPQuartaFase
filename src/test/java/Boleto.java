@@ -6,4 +6,3 @@ public class Boleto implements Pagamento {
         System.out.println("Pagamento de R$ " + valor + " realizado via Boleto Bancário.");
     }
 }
-

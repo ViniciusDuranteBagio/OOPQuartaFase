@@ -1,5 +1,3 @@
-package org.example;
-
 public class Funcionario {
     protected String nome;
     protected double salarioBase;
@@ -18,4 +16,3 @@ public class Funcionario {
         System.out.println("Salário: R$ " + calcularSalario());
     }
 }
-
