@@ -1,6 +1,6 @@
 package Aula4;
 
-public class Produto {
+public abstract class Produto {
     protected String nome;
     protected double preco;
     
@@ -32,4 +32,5 @@ public class Produto {
         System.out.println("Nome: " + this.nome);
         System.out.println("Preço: R$ " + this.preco);
     }
-} 
+
+}
