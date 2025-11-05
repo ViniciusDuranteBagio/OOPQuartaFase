@@ -7,4 +7,3 @@ public class ExportadorXML implements Exportador {
         System.out.println("<xml><dados>" + dados + "</dados></xml>");
     }
 }
-

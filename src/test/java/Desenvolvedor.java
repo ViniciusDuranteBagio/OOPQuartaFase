@@ -10,3 +10,4 @@ public class Desenvolvedor extends Funcionario {
         return salarioBase * 1.2;
     }
 }
+
