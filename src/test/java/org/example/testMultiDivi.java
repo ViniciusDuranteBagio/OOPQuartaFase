@@ -19,5 +19,8 @@ public class testMultiDivi {
         int resultado = test2.divisao(10, 2);
         assertEquals(2, resultado);
 
+
+
+
     }
 }
