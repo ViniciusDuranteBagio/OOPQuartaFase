@@ -1,8 +1,11 @@
 package Aula8;
 
 public class Calculadora {
-
-  public double elevarAoQuadrado(double numero) {
+  public int elevarAoQuadrado(int numero) {
     return numero * numero;
+  }
+
+  public int subtrair(int a, int b) {
+    return a - b;
   }
 }

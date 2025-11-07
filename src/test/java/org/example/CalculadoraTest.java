@@ -7,16 +7,23 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class CalculadoraTest {
   @Test
-  public void testarAoQuadrado3() {
+  public void testElevadoAoQuadrado6() {
     Calculadora calculadora = new Calculadora();
-    double resultado = calculadora.elevarAoQuadrado(3);
-    assertEquals(9, resultado);
+    int resultado = calculadora.elevarAoQuadrado(6);
+    assertEquals(36, resultado);
   }
 
   @Test
-  public void testarAoQuadrado2() {
+  public void testElevadoAoQuadrado9() {
     Calculadora calculadora = new Calculadora();
-    double resultado = calculadora.elevarAoQuadrado(2);
-    assertEquals(4, resultado);
+    int resultado = calculadora.elevarAoQuadrado(9);
+    assertEquals(81, resultado);
+  }
+
+  @Test
+  public void testeSubtrair() {
+    Calculadora calculadora = new Calculadora();
+    int resultado = calculadora.subtrair(6, 9);
+    assertEquals(-3, resultado);
   }
 }

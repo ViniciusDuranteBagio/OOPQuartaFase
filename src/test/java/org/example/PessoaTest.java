@@ -6,20 +6,26 @@ import static org.junit.jupiter.api.Assertions.*;
 
 public class PessoaTest {
   @Test
-  public void pessoaAdultaTemQueRetornarTrue() {
-    Pessoa pessoaUm = new Pessoa("teste", 19);
-    assertEquals(true, pessoaUm.isAdult());
+  public void testIsAdult() {
+    Pessoa pessoa1 = new Pessoa("João", 20);
+    assertTrue(pessoa1.isAdult());
   }
 
   @Test
-  public void pessoaAdultaTemQueRetornarTrueIdade18() {
-    Pessoa pessoaUm = new Pessoa("teste", 18);
-    assertEquals(true, pessoaUm.isAdult());
+  public void testIsAdult18Anos() {
+    Pessoa pessoa1 = new Pessoa("Mateus", 18);
+    assertTrue(pessoa1.isAdult());
   }
 
   @Test
-  public void pessoaCriancaTemQueRetornarFalse() {
-    Pessoa pessoaUm = new Pessoa("teste", 11);
-    assertEquals(false, pessoaUm.isAdult());
+  public void testIsAdultFalse() {
+    Pessoa pessoa1 = new Pessoa("Maria", 12);
+    assertFalse(pessoa1.isAdult());
+  }
+  @Test
+  public void testeCriaIdadeNegativa() {
+    Pessoa pessoa1 = new Pessoa("Maria", -1);
+    assertEquals(0, pessoa1.getIdade());
+    assertEquals("Maria", pessoa1.getNome());
   }
 }
