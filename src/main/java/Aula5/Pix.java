@@ -1,7 +1,8 @@
 package Aula5;
 
-public class Pix implements IMetodoPagamento{
-    public void Cobrar(){
-        System.out.println("gera o QRcode");
+public class Pix implements Pagamento {
+    @Override
+    public void processarPagamento(double valor) {
+        System.out.println("Pagamento de R$ " + valor + " realizado via Pix.");
     }
 }
