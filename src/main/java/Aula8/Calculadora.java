@@ -1,8 +1,21 @@
-package Aula8;
-
 public class Calculadora {
 
-  public double elevarAoQuadrado(double numero) {
-    return numero * numero;
+  public int somar(int a, int b) {
+    return a + b;
+  }
+
+  public int subtrair(int a, int b) {
+    return a - b;
+  }
+
+  public int multiplicar(int a, int b) {
+    return a * b;
+  }
+
+  public int dividir(int a, int b) {
+    if (b == 0) {
+      throw new ArithmeticException("Divisão por zero não permitida");
+    }
+    return a / b;
   }
 }
