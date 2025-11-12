@@ -1,0 +1,835 @@
+
+package ExerciciosAula4;
+
+public class Aluno extends Pessoa {
+    private String matricula;
+    
+  
+    public Aluno() {
+        super();
+    }
+    
+
+    public Aluno(String nome, int idade, String matricula) {
+        super(nome, idade);
+        this.matricula = matricula;
+    }
+    
+  
+    public String getMatricula() {
+        return matricula;
+    }
+    
+    public void setMatricula(String matricula) {
+        this.matricula = matricula;
+    }
+    
+    @Override
+    // Sobrescrevendo o método da superclasse
+    public void exibirInformacoes() {
+        super.exibirInformacoes();
+        System.out.println("Matrícula: " + this.matricula);
+    }
+} 
+
+
+**********************************************************************************************************************************************************************************************
+
+
+package ExerciciosAula4;
+
+public class Animal {
+    protected String nome;
+    protected int idade;
+    
+    
+    public Animal(String nome, int idade) {
+        this.nome = nome;
+        this.idade = idade;
+    }
+    
+    
+    public String getNome() {
+        return nome;
+    }
+    
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+    
+    public int getIdade() {
+        return idade;
+    }
+    
+    public void setIdade(int idade) {
+        this.idade = idade;
+    }
+    
+
+    public void dormir() {
+        System.out.println("O animal está dormindo");
+    }
+    
+    
+    public void exibirInformacoes() {
+        System.out.println("Nome: " + this.nome);
+        System.out.println("Idade: " + this.idade);
+    }
+} 
+**********************************************************************************************************************************************************************************************
+
+
+package ExerciciosAula4;
+
+public class Cachorro extends Animal {
+    
+  
+    public Cachorro(String nome, int idade) {
+        super(nome, idade);
+    }
+    
+    
+    public void latir() {
+        System.out.println("O cachorro está latindo");
+    }
+    
+  
+    public void brincar() {
+        System.out.println("O cachorro " + this.nome + " está brincando!");
+    }
+} 
+
+**********************************************************************************************************************************************************************************************
+
+
+package ExerciciosAula4;
+
+public class Carro extends Veiculo {
+    private int quantidadeDePortas;
+    
+   
+    public Carro(String marca, String modelo, int quantidadeDePortas) {
+        super(marca, modelo);
+        this.quantidadeDePortas = quantidadeDePortas;
+    }
+    
+
+    public int getQuantidadeDePortas() {
+        return quantidadeDePortas;
+    }
+    
+    public void setQuantidadeDePortas(int quantidadeDePortas) {
+        this.quantidadeDePortas = quantidadeDePortas;
+    }
+    
+   
+    @Override
+    public void exibirDetalhes() {
+        super.exibirDetalhes();
+        System.out.println("Quantidade de Portas: " + this.quantidadeDePortas);
+    }
+} 
+
+**********************************************************************************************************************************************************************************************
+
+
+package ExerciciosAula4;
+
+public class ContaBancaria {
+    protected String titular;
+    protected double saldo;
+    
+
+    public ContaBancaria(String titular, double saldo) {
+        this.titular = titular;
+        this.saldo = saldo;
+    }
+    
+
+    public String getTitular() {
+        return titular;
+    }
+    
+    public void setTitular(String titular) {
+        this.titular = titular;
+    }
+    
+    public double getSaldo() {
+        return saldo;
+    }
+    
+    public void setSaldo(double saldo) {
+        this.saldo = saldo;
+    }
+    
+    
+    public void exibirDetalhes() {
+        System.out.println("Titular: " + this.titular);
+        System.out.println("Saldo: R$ " + this.saldo);
+    }
+} 
+
+**********************************************************************************************************************************************************************************************
+
+
+package ExerciciosAula4;
+
+public class ContaCorrente extends ContaBancaria {
+    private double taxaManutencao;
+    
+
+    public ContaCorrente(String titular, double saldo, double taxaManutencao) {
+        super(titular, saldo);
+        this.taxaManutencao = taxaManutencao;
+    }
+    
+  
+    public double getTaxaManutencao() {
+        return taxaManutencao;
+    }
+    
+    public void setTaxaManutencao(double taxaManutencao) {
+        this.taxaManutencao = taxaManutencao;
+    }
+    
+    
+    @Override
+    public void exibirDetalhes() {
+        super.exibirDetalhes();
+        System.out.println("Taxa de Manutenção: R$ " + this.taxaManutencao);
+    }
+} 
+**********************************************************************************************************************************************************************************************
+
+package ExerciciosAula4;
+
+public class ContaPoupanca extends ContaBancaria {
+    private double taxaJuros;
+    
+
+    public ContaPoupanca(String titular, double saldo, double taxaJuros) {
+        super(titular, saldo);
+        this.taxaJuros = taxaJuros;
+    }
+    
+
+    public double getTaxaJuros() {
+        return taxaJuros;
+    }
+    
+    public void setTaxaJuros(double taxaJuros) {
+        this.taxaJuros = taxaJuros;
+    }
+    
+
+    @Override
+    public void exibirDetalhes() {
+        super.exibirDetalhes();
+        System.out.println("Taxa de Juros: " + this.taxaJuros + "%");
+    }
+} 
+**********************************************************************************************************************************************************************************************
+
+package ExerciciosAula4;
+
+public class Eletronico extends Produto {
+    private int garantiaEmMeses;
+    
+
+    public Eletronico(String nome, double preco, int garantiaEmMeses) {
+        super(nome, preco);
+        this.garantiaEmMeses = garantiaEmMeses;
+    }
+    
+
+    public int getGarantiaEmMeses() {
+        return garantiaEmMeses;
+    }
+    
+    public void setGarantiaEmMeses(int garantiaEmMeses) {
+        this.garantiaEmMeses = garantiaEmMeses;
+    }
+    
+
+    @Override
+    public void exibirDetalhes() {
+        super.exibirDetalhes();
+        System.out.println("Garantia: " + this.garantiaEmMeses + " meses");
+    }
+} 
+
+**********************************************************************************************************************************************************************************************
+
+
+package ExerciciosAula4;
+
+public class Empresa {
+    protected String nome;
+    protected String cidade;
+
+    public Empresa(String nome, String cidade) {
+        this.nome = nome;
+        this.cidade = cidade;
+    }
+    
+    
+    public String getNome() {
+        return nome;
+    }
+    
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+    
+    public String getCidade() {
+        return cidade;
+    }
+    
+    public void setCidade(String cidade) {
+        this.cidade = cidade;
+    }
+    
+ 
+    public void exibirDados() {
+        System.out.println("Nome da Empresa: " + this.nome);
+        System.out.println("Cidade: " + this.cidade);
+    }
+} 
+
+**********************************************************************************************************************************************************************************************
+
+
+package ExerciciosAula4;
+
+public class Funcionario {
+    protected String nome;
+    protected double salario;
+    
+ 
+    public Funcionario(String nome, double salario) {
+        this.nome = nome;
+        this.salario = salario;
+    }
+    
+ 
+    public String getNome() {
+        return nome;
+    }
+    
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+    
+    public double getSalario() {
+        return salario;
+    }
+    
+    public void setSalario(double salario) {
+        this.salario = salario;
+    }
+    
+ 
+    public void aumentarSalario(double porcentagem) {
+        this.salario += this.salario * (porcentagem / 100);
+        System.out.println("Salário aumentado em " + porcentagem + "%");
+    }
+    
+
+    public void exibirInformacoes() {
+        System.out.println("Nome: " + this.nome);
+        System.out.println("Salário: R$ " + this.salario);
+    }
+} 
+**********************************************************************************************************************************************************************************************
+
+
+package ExerciciosAula4;
+
+public class Gerente extends Funcionario {
+    private String departamento;
+    
+  
+    public Gerente(String nome, double salario, String departamento) {
+        super(nome, salario);
+        this.departamento = departamento;
+    }
+    
+    
+    public String getDepartamento() {
+        return departamento;
+    }
+    
+    public void setDepartamento(String departamento) {
+        this.departamento = departamento;
+    }
+    
+  
+    @Override
+    public void exibirInformacoes() {
+        super.exibirInformacoes();
+        System.out.println("Departamento: " + this.departamento);
+    }
+} 
+**********************************************************************************************************************************************************************************************
+
+package ExerciciosAula4;
+
+public class Guerreiro extends Personagem {
+    private int forca;
+    
+
+    public Guerreiro(String nome, int nivel, int forca) {
+        super(nome, nivel);
+        this.forca = forca;
+    }
+    
+ 
+    public int getForca() {
+        return forca;
+    }
+    
+    public void setForca(int forca) {
+        this.forca = forca;
+    }
+    
+ 
+    @Override
+    public void exibirInformacoes() {
+        super.exibirInformacoes();
+        System.out.println("Força: " + this.forca);
+    }
+}
+**********************************************************************************************************************************************************************************************
+
+
+package ExerciciosAula4;
+
+public class Loja extends Empresa {
+    private String tipoDeProduto;
+    
+    
+    public Loja(String nome, String cidade, String tipoDeProduto) {
+        super(nome, cidade);
+        this.tipoDeProduto = tipoDeProduto;
+    }
+    
+   
+    public String getTipoDeProduto() {
+        return tipoDeProduto;
+    }
+    
+    public void setTipoDeProduto(String tipoDeProduto) {
+        this.tipoDeProduto = tipoDeProduto;
+    }
+    
+    
+    @Override
+    public void exibirDados() {
+        super.exibirDados();
+        System.out.println("Tipo de Produto: " + this.tipoDeProduto);
+    }
+} 
+
+**********************************************************************************************************************************************************************************************
+
+
+package ExerciciosAula4;
+
+public class Mago extends Personagem {
+    private int mana;
+    
+  
+    public Mago(String nome, int nivel, int mana) {
+        super(nome, nivel);
+        this.mana = mana;
+    }
+    
+   
+    public int getMana() {
+        return mana;
+    }
+    
+    public void setMana(int mana) {
+        this.mana = mana;
+    }
+    
+  
+    @Override
+    public void exibirInformacoes() {
+        super.exibirInformacoes();
+        System.out.println("Mana: " + this.mana);
+    }
+} 
+**********************************************************************************************************************************************************************************************
+
+
+package ExerciciosAula4;
+
+public class Moto extends Veiculo {
+    private int cilindrada;
+    
+  
+    public Moto(String marca, String modelo, int cilindrada) {
+        super(marca, modelo);
+        this.cilindrada = cilindrada;
+    }
+    
+    
+    public int getCilindrada() {
+        return cilindrada;
+    }
+    
+    public void setCilindrada(int cilindrada) {
+        this.cilindrada = cilindrada;
+    }
+    
+  
+    @Override
+    public void exibirDetalhes() {
+        super.exibirDetalhes();
+        System.out.println("Cilindrada: " + this.cilindrada + "cc");
+    }
+} 
+**********************************************************************************************************************************************************************************************
+
+
+package ExerciciosAula4;
+
+public class Personagem {
+    protected String nome;
+    protected int nivel;
+    
+   
+    public Personagem(String nome, int nivel) {
+        this.nome = nome;
+        this.nivel = nivel;
+    }
+    
+    public String getNome() {
+        return nome;
+    }
+    
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+    
+    public int getNivel() {
+        return nivel;
+    }
+    
+    public void setNivel(int nivel) {
+        this.nivel = nivel;
+    }
+    
+    
+    public void exibirInformacoes() {
+        System.out.println("Nome: " + this.nome);
+        System.out.println("Nível: " + this.nivel);
+    }
+} 
+**********************************************************************************************************************************************************************************************
+
+
+package ExerciciosAula4;
+
+public class Pessoa {
+    protected String nome;
+    protected int idade;
+    
+   
+    public Pessoa() {
+    }
+    
+    
+    public Pessoa(String nome, int idade) {
+        this.nome = nome;
+        this.idade = idade;
+    }
+    
+  
+    public String getNome() {
+        return nome;
+    }
+    
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+    
+    public int getIdade() {
+        return idade;
+    }
+    
+    public void setIdade(int idade) {
+        this.idade = idade;
+    }
+    
+    
+    public void exibirInformacoes() {
+        System.out.println("Nome: " + this.nome);
+        System.out.println("Idade: " + this.idade);
+    }
+} 
+**********************************************************************************************************************************************************************************************
+
+
+package ExerciciosAula4;
+
+public abstract class Produto {
+    protected String nome;
+    protected double preco;
+    
+ 
+    public Produto(String nome, double preco) {
+        this.nome = nome;
+        this.preco = preco;
+    }
+    
+
+    public String getNome() {
+        return nome;
+    }
+    
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+    
+    public double getPreco() {
+        return preco;
+    }
+    
+    public void setPreco(double preco) {
+        this.preco = preco;
+    }
+    
+ 
+    public void exibirDetalhes() {
+        System.out.println("Nome: " + this.nome);
+        System.out.println("Preço: R$ " + this.preco);
+    }
+
+}
+
+**********************************************************************************************************************************************************************************************
+
+
+package ExerciciosAula4;
+
+public class Veiculo {
+    protected String marca;
+    protected String modelo;
+    
+  
+    public Veiculo(String marca, String modelo) {
+        this.marca = marca;
+        this.modelo = modelo;
+    }
+    
+  
+    public String getMarca() {
+        return marca;
+    }
+    
+    public void setMarca(String marca) {
+        this.marca = marca;
+    }
+    
+    public String getModelo() {
+        return modelo;
+    }
+    
+    public void setModelo(String modelo) {
+        this.modelo = modelo;
+    }
+    
+
+    public void exibirDetalhes() {
+        System.out.println("Marca: " + this.marca);
+        System.out.println("Modelo: " + this.modelo);
+    }
+} 
+
+
+
+**********************************************************************************************************************************************************************************************
+Main
+
+
+package ExerciciosAula4;
+
+public class Main {
+    public static void main(String[] args) {
+        System.out.println("=== EXERCÍCIOS DE HERANÇA ===\n");
+        
+        // Exercício 1: Herança básica
+        System.out.println("EXERCÍCIO 1 - Herança básica:");
+        Aluno aluno = new Aluno();
+        aluno.setNome("João Silva");
+        aluno.setIdade(20);
+        aluno.setMatricula("2023001");
+        System.out.println("=== Informações do Aluno ===");
+        aluno.exibirInformacoes();
+        System.out.println();
+        
+        // Exercício 2: Usando super() no construtor
+        System.out.println("EXERCÍCIO 2 - Usando super() no construtor:");
+        Aluno aluno2 = new Aluno("Maria Santos", 22, "2023002");
+        System.out.println("=== Informações do Aluno ===");
+        aluno2.exibirInformacoes();
+        System.out.println();
+        
+        // Exercício 3: Hierarquia de Veículos
+        System.out.println("EXERCÍCIO 3 - Hierarquia de Veículos:");
+        Carro carro = new Carro("Toyota", "Corolla", 4);
+        Moto moto = new Moto("Honda", "CG 150", 150);
+        
+        System.out.println("=== Detalhes do Carro ===");
+        carro.exibirDetalhes();
+        System.out.println();
+        
+        System.out.println("=== Detalhes da Moto ===");
+        moto.exibirDetalhes();
+        System.out.println();
+        
+        // Exercício 4: Adicionando métodos em herança
+        System.out.println("EXERCÍCIO 4 - Adicionando métodos em herança:");
+        Cachorro cachorro = new Cachorro("Rex", 3);
+        cachorro.dormir();
+        cachorro.latir();
+        System.out.println();
+        
+        // Exercício 5: Atributos protected
+        System.out.println("EXERCÍCIO 5 - Atributos protected:");
+        Cachorro cachorro2 = new Cachorro("Buddy", 2);
+        cachorro2.exibirInformacoes();
+        cachorro2.brincar();
+        System.out.println();
+        
+        // Exercício 6: Método compartilhado
+        System.out.println("EXERCÍCIO 6 - Método compartilhado:");
+        Gerente gerente = new Gerente("Carlos Silva", 5000.0, "TI");
+        System.out.println("=== Informações do Gerente ===");
+        gerente.exibirInformacoes();
+        gerente.aumentarSalario(10.0);
+        System.out.println("=== Após aumento ===");
+        gerente.exibirInformacoes();
+        System.out.println();
+        
+        // Exercício 7: Usando super em métodos
+        System.out.println("EXERCÍCIO 7 - Usando super em métodos:");
+        Eletronico eletronico = new Eletronico("Smartphone", 1500.0, 12);
+        System.out.println("=== Detalhes do Eletrônico ===");
+        eletronico.exibirDetalhes();
+        System.out.println();
+        
+        // Exercício 8: Hierarquia de Contas Bancárias
+        System.out.println("EXERCÍCIO 8 - Hierarquia de Contas Bancárias:");
+        ContaCorrente contaCorrente = new ContaCorrente("João", 5000.0, 15.0);
+        ContaPoupanca contaPoupanca = new ContaPoupanca("Maria", 3000.0, 0.5);
+        
+        System.out.println("=== Conta Corrente ===");
+        contaCorrente.exibirDetalhes();
+        System.out.println();
+        
+        System.out.println("=== Conta Poupança ===");
+        contaPoupanca.exibirDetalhes();
+        System.out.println();
+        
+        // Exercício 9: Classe base para jogos
+        System.out.println("EXERCÍCIO 9 - Classe base para jogos:");
+        Guerreiro guerreiro = new Guerreiro("Aragorn", 15, 85);
+        Mago mago = new Mago("Gandalf", 20, 100);
+        
+        System.out.println("=== Guerreiro ===");
+        guerreiro.exibirInformacoes();
+        System.out.println();
+        
+        System.out.println("=== Mago ===");
+        mago.exibirInformacoes();
+        System.out.println();
+        
+        // Exercício 10: Construtores em cadeia
+        System.out.println("EXERCÍCIO 10 - Construtores em cadeia:");
+        Loja loja = new Loja("Mega Store", "São Paulo", "Eletrônicos");
+        System.out.println("=== Dados da Loja ===");
+        loja.exibirDados();
+        System.out.println();
+        
+        System.out.println("=== FIM DOS EXERCÍCIOS ===");
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+**********************************************************************************************************************************************************************************************
