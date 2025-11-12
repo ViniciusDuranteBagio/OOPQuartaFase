@@ -1,0 +1,243 @@
+package ExerciciosAula1;
+
+public class Arma {
+
+    String nome;
+    int dano;
+
+    void usar() {
+        System.out.println("A arma foi usada para atacar causando " + dano + " de dano!");
+    }
+}
+
+
+package ExerciciosAula1;
+
+public class Heroi {
+
+    String nome;
+    String classe;
+
+    void lutar() {
+        System.out.println("O herói " + nome + " (" + classe + ") atacou!");
+    }
+}
+
+package ExerciciosAula1;
+
+public class Inimigo {
+
+        String nome;
+        String tipo;
+        int forca;
+
+        void atacar() {
+            System.out.println("O inimigo atacou com força " + forca + "!");
+        }
+    }
+
+package ExerciciosAula1;
+
+public class Inventario {
+
+        String[] itens = new String[5];
+        int contador = 0;
+
+        void adicionarItem(String item) {
+            if (contador < itens.length) {
+                itens[contador] = item;
+                contador++;
+            } else {
+                System.out.println("Inventário cheio!");
+            }
+        }
+
+        void mostrarItens() {
+            System.out.println("Itens no inventário:");
+            for (int i = 0; i < contador; i++) {
+                System.out.println("- " + itens[i]);
+            }
+        }
+    }
+
+
+package ExerciciosAula1;
+
+public class Jogador {
+
+    String nome;
+    int pontuacao;
+    int nivel;
+
+    void subirDeNivel() {
+        nivel++;
+        System.out.println("O jogador subiu de nível!");
+    }
+}
+
+
+
+package ExerciciosAula1;
+
+public class Jogo {
+
+        int pontuacao;
+
+        void aumentarPontuacao(int pontos) {
+            pontuacao += pontos;
+            System.out.println("Pontuação atual: " + pontuacao);
+        }
+    }
+
+package ExerciciosAula1;
+
+public class Lampada {
+
+    boolean acesa;
+
+    void ligar() {
+        acesa = true;
+        System.out.println("A lâmpada foi acesa!");
+    }
+
+    void desligar() {
+        acesa = false;
+        System.out.println("A lâmpada foi apagada!");
+    }
+}
+
+
+package ExerciciosAula1;
+
+public class Monstro {
+
+        String nome;
+        int vida;
+
+        void rugir() {
+            System.out.println("O monstro rugiu!");
+        }
+    }
+
+
+package ExerciciosAula1;
+
+public class Personagem {
+
+    String nome;
+    int vida;
+    int nivel;
+
+    void mostrarStatus() {
+        System.out.println("Nome: " + nome + " | Vida: " + vida + " | Nível: " + nivel);
+    }
+}
+
+
+package ExerciciosAula1;
+
+public class Usuario {
+
+    String nome;
+    String senha;
+
+    boolean verificarSenha(String senhaDigitada) {
+        return senha.equals(senhaDigitada);
+    }
+}
+
+*******************************************************************************************************************************************************************************
+Main
+package ExerciciosAula1;
+
+public class Main {
+    public static void main(String[] args) {
+
+        // Monstro
+        Monstro m = new Monstro();
+        m.nome = "Dragão";
+        m.vida = 300;
+        m.rugir();
+
+        // Jogador
+        Jogador j1 = new Jogador();
+        j1.nome = "Andrei";
+        j1.nivel = 1;
+
+        Jogador j2 = new Jogador();
+        j2.nome = "Lucas";
+        j2.nivel = 2;
+
+        j1.subirDeNivel();
+
+        // Inimigo
+        Inimigo i = new Inimigo();
+        i.nome = "Orc";
+        i.tipo = "Guerreiro";
+        i.forca = 50;
+        i.atacar();
+
+        // Arma
+        Arma espada = new Arma();
+        espada.nome = "Espada de Ferro";
+        espada.dano = 25;
+        espada.usar();
+
+        // Inventário
+        Inventario inv = new Inventario();
+        inv.adicionarItem("Poção");
+        inv.adicionarItem("Escudo");
+        inv.adicionarItem("Arco");
+        inv.mostrarItens();
+
+        // Personagem
+        Personagem p = new Personagem();
+        p.nome = "Herói";
+        p.vida = 100;
+        p.nivel = 5;
+        p.mostrarStatus();
+
+        // Lâmpada
+        Lampada lamp = new Lampada();
+        lamp.ligar();
+        lamp.desligar();
+
+        // Usuário
+        Usuario u = new Usuario();
+        u.nome = "admin";
+        u.senha = "1234";
+        System.out.println("Senha correta? " + u.verificarSenha("1234"));
+
+        // Jogo
+        Jogo jogo = new Jogo();
+        jogo.aumentarPontuacao(10);
+        jogo.aumentarPontuacao(20);
+        jogo.aumentarPontuacao(15);
+
+        // Heróis
+        Heroi h1 = new Heroi();
+        h1.nome = "Arthur";
+        h1.classe = "Guerreiro";
+
+        Heroi h2 = new Heroi();
+        h2.nome = "Merlin";
+        h2.classe = "Mago";
+
+        Heroi h3 = new Heroi();
+        h3.nome = "Robin";
+        h3.classe = "Arqueiro";
+
+        h1.lutar();
+        h2.lutar();
+        h3.lutar();
+    }
+}
+
+
+
+
+
+
+
+
+
