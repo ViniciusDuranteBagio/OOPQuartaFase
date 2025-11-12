@@ -1,5 +1,5 @@
 package Aula5;
 
-public interface IMetodoPagamento {
+public interface MetodoPagamento {
     void Cobrar();
 }
