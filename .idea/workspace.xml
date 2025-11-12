@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="cda102a5-5a35-4204-9533-18404699baaf" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/java/Calculadora.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/CalculadoraTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/CarrinhoDeCompras.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ContaBancaria.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ContaBancariaTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Contador.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ContadorTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Pessoa.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/PessoaTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Retangulo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/RetanguloTest.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <favorite-branches>
+      <branch-storage>
+        <map>
+          <entry type="LOCAL">
+            <value>
+              <list>
+                <branch-info repo="$PROJECT_DIR$" source="prova-marcos-3" />
+              </list>
+            </value>
+          </entry>
+        </map>
+      </branch-storage>
+    </favorite-branches>
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="trabalhofinal-marcos" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;MarcosEffting&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/ViniciusDuranteBagio/OOPQuartaFase.git&quot;,
+    &quot;accountId&quot;: &quot;9a141e09-843e-4bde-b51a-f7c3139dd3fb&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
+  <component name="ProjectId" id="31wGG5wMyrz7egVOGrKXvUDz6qU" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Aluno.executor": "Run",
+    "Application.Main.executor": "Run",
+    "Application.Prova.Main.executor": "Run",
+    "Application.Retangulo.executor": "Run",
+    "Application.org.example.Main.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "aula7-marcos",
+    "ignore.virus.scanning.warn.message": "true",
+    "junie.onboarding.icon.badge.shown": "true",
+    "last_opened_file_path": "C:/Users/Marcos/IdeaProjects/OrientadaAObjetos/OOPQuartaFase",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "project.propCompiler",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunManager" selected="Application.org.example.Main">
+    <configuration name="Aluno" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Aluno" />
+      <module name="Aula1" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="Aula1" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Prova.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Prova.Main" />
+      <module name="Aula1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Prova.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Retangulo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Retangulo" />
+      <module name="Aula1" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="org.example.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.Main" />
+      <module name="Aula1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="OOPQuartaFase" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="OOPQuartaFase" />
+      <option name="filePath" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Retangulo" />
+        <item itemvalue="Application.Prova.Main" />
+        <item itemvalue="Application.org.example.Main" />
+        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.Aluno" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-fbdcb00ec9e3-intellij.indexing.shared.core-IU-251.23774.435" />
+        <option value="bundled-js-predefined-d6986cc7102b-f27c65a3e318-JavaScript-IU-251.23774.435" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="cda102a5-5a35-4204-9533-18404699baaf" name="Changes" comment="" />
+      <created>1756427622276</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1756427622276</updated>
+      <workItem from="1756427623562" duration="425000" />
+      <workItem from="1756671622926" duration="1036000" />
+      <workItem from="1756674697343" duration="238000" />
+      <workItem from="1756674963866" duration="143000" />
+      <workItem from="1756675122426" duration="5937000" />
+      <workItem from="1756939134323" duration="3646000" />
+      <workItem from="1756943009867" duration="543000" />
+      <workItem from="1757369942299" duration="717000" />
+      <workItem from="1757456121786" duration="13000" />
+      <workItem from="1757456746903" duration="224000" />
+      <workItem from="1757458260164" duration="12000" />
+      <workItem from="1757459279988" duration="3000" />
+      <workItem from="1757542590108" duration="3134000" />
+      <workItem from="1758664670045" duration="16000" />
+      <workItem from="1762366250655" duration="4260000" />
+      <workItem from="1762370561484" duration="2891000" />
+      <workItem from="1762985798443" duration="155000" />
+      <workItem from="1762986032203" duration="1608000" />
+      <workItem from="1762987789554" duration="305000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/Main.java</url>
+          <line>2</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
