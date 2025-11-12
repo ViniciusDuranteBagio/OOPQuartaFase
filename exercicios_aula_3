@@ -1,0 +1,323 @@
+package ExerciciosAula3;
+
+public class Aluno {
+    private String nome;
+    private String matricula;
+    private double nota;
+
+    public Aluno(String nome, String matricula) {
+        this.nome = nome;
+        this.matricula = matricula;
+        this.nota = 0;
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public String getMatricula() {
+        return matricula;
+    }
+
+    public void setMatricula(String matricula) {
+        this.matricula = matricula;
+    }
+
+    public double getNota() {
+        return nota;
+    }
+
+    public void setNota(double nota) {
+        if (nota >= 0 && nota <= 10) {
+            this.nota = nota;
+        } else {
+            System.out.println("Nota inválida! Deve estar entre 0 e 10.");
+        }
+    }
+
+    public void exibirStatus() {
+        System.out.println("Aluno: " + nome + " | Matrícula: " + matricula + " | Nota: " + nota);
+    }
+}
+******************************************************************************************************************************************************************************************
+package ExerciciosAula3;
+
+public class ContaBancaria {
+    private String numeroConta;
+    private double saldo;
+    private String titular;
+
+    public ContaBancaria(String numeroConta, String titular) {
+        this.numeroConta = numeroConta;
+        this.titular = titular;
+        this.saldo = 0;
+    }
+
+    public String getNumeroConta() {
+        return numeroConta;
+    }
+
+    public String getTitular() {
+        return titular;
+    }
+
+    public void setTitular(String titular) {
+        this.titular = titular;
+    }
+
+    public double getSaldo() {
+        return saldo;
+    }
+
+    public void depositar(double valor) {
+        if (valor > 0) {
+            saldo += valor;
+        } else {
+            System.out.println("Valor inválido para depósito!");
+        }
+    }
+
+    public void sacar(double valor) {
+        if (valor > 0 && valor <= saldo) {
+            saldo -= valor;
+        } else {
+            System.out.println("Saldo insuficiente ou valor inválido!");
+        }
+    }
+
+    public void exibirSaldo() {
+        System.out.println("Saldo atual: " + saldo);
+    }
+}
+******************************************************************************************************************************************************************************************
+package ExerciciosAula3;
+
+public class Livro {
+    private String titulo;
+    private String autor;
+    private int anoPublicacao;
+
+    public Livro(String titulo, String autor, int anoPublicacao) {
+        this.titulo = titulo;
+        this.autor = autor;
+        setAnoPublicacao(anoPublicacao); // usa validação
+    }
+
+    public String getTitulo() {
+        return titulo;
+    }
+
+    public void setTitulo(String titulo) {
+        this.titulo = titulo;
+    }
+
+    public String getAutor() {
+        return autor;
+    }
+
+    public void setAutor(String autor) {
+        this.autor = autor;
+    }
+
+    public int getAnoPublicacao() {
+        return anoPublicacao;
+    }
+
+    public void setAnoPublicacao(int anoPublicacao) {
+        if (anoPublicacao > 0) {
+            this.anoPublicacao = anoPublicacao;
+        } else {
+            System.out.println("Ano de publicação inválido!");
+        }
+    }
+
+    public void exibirDetalhes() {
+        System.out.println("Título: " + titulo + " | Autor: " + autor + " | Ano: " + anoPublicacao);
+    }
+}
+******************************************************************************************************************************************************************************************
+package ExerciciosAula3;
+
+public class Pessoa {
+    private String nome;
+    private int idade;
+    private String cpf;
+
+    // Construtor completo
+    public Pessoa(String nome, int idade, String cpf) {
+        this.nome = nome;
+        this.idade = idade;
+        this.cpf = cpf;
+    }
+
+    // Construtor nome + idade
+    public Pessoa(String nome, int idade) {
+        this.nome = nome;
+        this.idade = idade;
+        this.cpf = "Desconhecido";
+    }
+
+    // Construtor padrão
+    public Pessoa() {
+        this.nome = "Sem nome";
+        this.idade = 0;
+        this.cpf = "Desconhecido";
+    }
+
+    // Getters e setters
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public int getIdade() {
+        return idade;
+    }
+
+    public void setIdade(int idade) {
+        this.idade = idade;
+    }
+
+    public String getCpf() {
+        return cpf;
+    }
+
+    public void setCpf(String cpf) {
+        this.cpf = cpf;
+    }
+
+    public void exibirInformacoes() {
+        System.out.println("Nome: " + nome + " | Idade: " + idade + " | CPF: " + cpf);
+    }
+}
+******************************************************************************************************************************************************************************************
+package ExerciciosAula3;
+
+public class Produto {
+    private String nome;
+    private double preco;
+    private int quantidadeEmEstoque;
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public double getPreco() {
+        return preco;
+    }
+
+    public void setPreco(double preco) {
+        if (preco > 0) {
+            this.preco = preco;
+        } else {
+            System.out.println("Preço inválido!");
+        }
+    }
+
+    public int getQuantidadeEmEstoque() {
+        return quantidadeEmEstoque;
+    }
+
+    public void setQuantidadeEmEstoque(int quantidadeEmEstoque) {
+        if (quantidadeEmEstoque >= 0) {
+            this.quantidadeEmEstoque = quantidadeEmEstoque;
+        } else {
+            System.out.println("Quantidade inválida!");
+        }
+    }
+
+    public void adicionarEstoque(int quantidade) {
+        if (quantidade > 0) {
+            this.quantidadeEmEstoque += quantidade;
+        } else {
+            System.out.println("Quantidade inválida para adicionar!");
+        }
+    }
+
+    public void vender(int quantidade) {
+        if (quantidade > 0 && quantidade <= quantidadeEmEstoque) {
+            this.quantidadeEmEstoque -= quantidade;
+        } else {
+            System.out.println("Estoque insuficiente ou quantidade inválida!");
+        }
+    }
+}
+******************************************************************************************************************************************************************************************
+package ExerciciosAula3;
+
+public class Main {
+    public static void main(String[] args) {
+
+                // ===== Exercício 1: ContaBancaria =====
+                ContaBancaria conta = new ContaBancaria("12345-6", "Andrei");
+                conta.depositar(500);
+                conta.exibirSaldo();
+                conta.sacar(200);
+                conta.exibirSaldo();
+                conta.sacar(400);
+
+                System.out.println("\n---");
+
+                // ===== Exercício 2: Pessoa =====
+                Pessoa p1 = new Pessoa("Maria", 30, "123.456.789-00");
+                Pessoa p2 = new Pessoa("Carlos", 25); // CPF Desconhecido
+                Pessoa p3 = new Pessoa(); // padrão
+
+                p1.exibirInformacoes();
+                p2.exibirInformacoes();
+                p3.exibirInformacoes();
+
+                System.out.println("\n---");
+
+                // ===== Exercício 3: Produto =====
+                Produto prod = new Produto();
+                prod.setNome("Notebook");
+                prod.setPreco(3500);
+                prod.setQuantidadeEmEstoque(10);
+
+                prod.adicionarEstoque(5);
+                prod.vender(3);
+                prod.vender(20);
+
+                System.out.println("Produto: " + prod.getNome() + " | Preço: " + prod.getPreco() +
+                        " | Estoque: " + prod.getQuantidadeEmEstoque());
+
+                System.out.println("\n---");
+
+                // ===== Exercício 4: Aluno =====
+                Aluno aluno = new Aluno("João", "2025001");
+                aluno.setNota(8.5);
+                aluno.exibirStatus();
+                aluno.setNota(12);
+
+                System.out.println("\n---");
+
+                // ===== Exercício 5: Retangulo =====
+                Retangulo ret = new Retangulo();
+                ret.setLargura(5);
+                ret.setAltura(10);
+                System.out.println("Área: " + ret.calcularArea());
+                System.out.println("Perímetro: " + ret.calcularPerimetro());
+                ret.setAltura(-2);
+
+                System.out.println("\n---");
+
+                // ===== Exercício 6: Livro =====
+                Livro livro = new Livro("O Senhor dos Anéis", "J.R.R. Tolkien", 1954);
+                livro.exibirDetalhes();
+                livro.setAnoPublicacao(-100);
+            }
+        }
+
+
