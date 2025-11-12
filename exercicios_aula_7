@@ -1,0 +1,129 @@
+
+package ExerciciosAula7;
+
+public class Calculadora {
+
+  public double dividir(int valor1, int valor2) {
+    try {
+      ValidaNumero validador = new ValidaNumero();
+      validador.validar(valor1, valor2);
+      return valor1 / valor2;
+    } catch (Exception erro) {
+      System.out.println("numero não pode ser 0");
+      return 0;
+    }
+  }
+}
+
+**************************************************************************************************************************************************************************************************]
+
+package Aula7;
+
+public class MenorDeIdadeException extends RuntimeException {
+  public MenorDeIdadeException() {
+    super("Menor de idade não pode se cadastrar");
+  }
+}
+
+**************************************************************************************************************************************************************************************************
+
+package Aula7;
+
+public class NomeInvalidoException extends RuntimeException {
+  public NomeInvalidoException(String message) {
+    super(message);
+  }
+}
+
+**************************************************************************************************************************************************************************************************
+
+package Aula7;
+
+public class Usuario {
+  public String nome;
+  public String inscricao;
+  public int age;
+  Usuario(String nomeInicial) {
+    if (nomeInicial == null || nomeInicial.isEmpty()) {
+      throw new NomeInvalidoException("nome do usuario não pode ser vazio ou nullo");
+    }
+    nome = nomeInicial;
+  }
+}
+
+**************************************************************************************************************************************************************************************************
+
+package Aula7;
+
+public class ValidaNumero {
+  public void validar (int valor1, int valor2) {
+    if (valor1 == 0 || valor2 == 0) {
+      throw new RuntimeException("valor não pode ser 0");
+    }
+  }
+}
+
+**************************************************************************************************************************************************************************************************
+Main
+public class Main {
+    public static void main(String[] args) {
+
+        System.out.println("===== EXERCÍCIO 1: Divisão válida =====");
+        Calculadora calc = new Calculadora();
+        double resultado1 = calc.dividir(10, 2);
+        System.out.println("Resultado: " + resultado1);
+
+        System.out.println("\n===== EXERCÍCIO 2: ValidaNumero com valor 0 =====");
+        try {
+            ValidaNumero validador = new ValidaNumero();
+            validador.validar(0, 5);
+        } catch (Exception e) {
+            System.out.println("Erro: " + e.getMessage());
+        }
+
+        System.out.println("\n===== EXERCÍCIO 3: Criar usuário com nome válido =====");
+        try {
+            Usuario user1 = new Usuario("Andrei");
+            System.out.println("Usuário criado: " + user1.nome);
+        } catch (NomeInvalidoException e) {
+            System.out.println("Erro: " + e.getMessage());
+        }
+
+        System.out.println("\n===== EXERCÍCIO 4: Criar usuário com nome inválido =====");
+        try {
+            Usuario user2 = new Usuario("");
+            System.out.println("Usuário criado: " + user2.nome);
+        } catch (NomeInvalidoException e) {
+            System.out.println("Erro: " + e.getMessage());
+        }
+
+        System.out.println("\n===== EXERCÍCIO 5: Testar menor de idade =====");
+        int idade1 = 15;
+        try {
+            if (idade1 < 18) {
+                throw new MenorDeIdadeException();
+            }
+            System.out.println("Usuário pode se cadastrar!");
+        } catch (MenorDeIdadeException e) {
+            System.out.println(e.getMessage());
+        }
+
+        System.out.println("\n===== EXERCÍCIO 6: Testar maior de idade =====");
+        int idade2 = 20;
+        try {
+            if (idade2 < 18) {
+                throw new MenorDeIdadeException();
+            }
+            System.out.println("Usuário pode se cadastrar!");
+        } catch (MenorDeIdadeException e) {
+            System.out.println(e.getMessage());
+        }
+
+        System.out.println("\n===== EXERCÍCIO 7: Divisão inválida (por zero) =====");
+        double resultado2 = calc.dividir(10, 0);
+        System.out.println("Resultado: " + resultado2);
+
+        System.out.println("\n===== FIM DOS TESTES =====");
+    }
+}
+
