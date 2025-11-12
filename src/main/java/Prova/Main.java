@@ -1,5 +1,5 @@
 package Prova;
-
+/*
 public class Main {
     public static void main(String[] args) {
         //Questão01
@@ -114,4 +114,4 @@ public class Main {
 
 
 
- /*/}}
+ /*/

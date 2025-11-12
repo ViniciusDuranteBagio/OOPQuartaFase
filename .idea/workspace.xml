@@ -5,7 +5,59 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9d94860e-a15f-4c11-b05d-3e76ce4f8d1e" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Execessoes/Execessoes.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Execessoes/src/Calculadora.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Execessoes/src/CalculadoraMatematica.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Execessoes/src/Conta.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Execessoes/src/ContaBancaria.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Execessoes/src/Conversor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Execessoes/src/DocumentoInvalidoException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Execessoes/src/ErroComCodigoException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Execessoes/src/NomeInvalidoException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Execessoes/src/Operações.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Execessoes/src/Pessoa.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Execessoes/src/UsuarioNaoEncontradoException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Execessoes/src/ValidadorEntrada.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Execessoes/src/VetorNumeros.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Testes_Unitarios/Testes_Unitarios.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Testes_Unitarios/src/Calculadora.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Testes_Unitarios/src/CalculadoraTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Testes_Unitarios/src/CarrinhoDeCompras.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Testes_Unitarios/src/CarrinhoDeComprasTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Testes_Unitarios/src/ContaBancaria.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Testes_Unitarios/src/ContaBancariaTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Testes_Unitarios/src/Contador.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Testes_Unitarios/src/ContadorTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Testes_Unitarios/src/Pessoa.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Testes_Unitarios/src/PessoaTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Testes_Unitarios/src/Retangulo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Testes_Unitarios/src/RetanguloTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Prova/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Prova/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Prova/Funcionario.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Prova/Gerente.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Prova/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Prova/Pessoa3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Prova/Professora.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/Aluno.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/Aluno.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/Arma.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/Arma.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/ContaBancaria.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/ContaBancaria.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/Heroi.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/Heroi.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/Inimigo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/Inimigo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/Inventario.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/Inventario.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/Jogador.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/Jogador.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/Jogo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/Jogo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/Lampada.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/Lampada.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/Monstro.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/Monstro.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/Person.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/Person.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/Personagem.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/Personagem.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/Pessoa.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/Pessoa.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/Usuario.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/Usuario.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,14 +92,18 @@
     "Application.AtividadesPOO2.Main.executor": "Run",
     "Application.ImpressaoDocumentos.executor": "Run",
     "Application.Main (1).executor": "Run",
+    "Application.Main (2).executor": "Run",
     "Application.Main.executor": "Run",
+    "Application.SistemaControleEstoque.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "atividade-gabriel-baggio",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/Gabriel Baggio/IdeaProjects/Recursividade",
+    "onboarding.tips.debug.path": "C:/Users/Gabriel Baggio/IdeaProjects/OOPQuartaFase/Testes_Unitarios/src/Main.java",
     "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0"
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -55,7 +111,7 @@
       <recent name="C:\Users\Gabriel Baggio\IdeaProjects\OOPQuartaFase\src\main\java\Prova" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="Application.Main (1)">
     <configuration name="AtividadesPOO2.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="AtividadesPOO2.Main" />
       <module name="Aula1" />
@@ -69,30 +125,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AtividadesPOO.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="AtividadesPOO.Main" />
-      <module name="Aula1" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="AtividadesPOO.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ImpressaoDocumentos" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ImpressaoDocumentos" />
-      <module name="Aula1" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="UNNAMED_CLASS_CONFIGURATION" value="true" />
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="Aula1" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="Execessoes" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -106,6 +148,13 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SistemaControleEstoque" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="SistemaControleEstoque" />
+      <module name="Aula1" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -125,11 +174,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main (1)" />
+        <item itemvalue="Application.SistemaControleEstoque" />
+        <item itemvalue="Application.Main (2)" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.AtividadesPOO2.Main" />
-        <item itemvalue="Application.AtividadesPOO.Main" />
-        <item itemvalue="Application.ImpressaoDocumentos" />
-        <item itemvalue="Application.Main (1)" />
       </list>
     </recent_temporary>
   </component>
