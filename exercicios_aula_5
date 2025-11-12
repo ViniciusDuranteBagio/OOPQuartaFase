@@ -1,0 +1,153 @@
+
+package ExercicioAula5;
+
+public class Aluno extends Pessoa {
+    public void falar() {
+        System.out.println("fala portugues");
+    }
+}
+*********************************************************************************************************************************************************************************************
+
+package ExercicioAula5;
+
+public abstract class Animal {
+    public boolean isVivo;
+    public boolean isDoente;
+    public String nome;
+
+    public Animal(String nome, boolean isVivo, boolean isDoente) {
+        this.nome = nome;
+        this.isVivo = isVivo;
+        this.isDoente = isDoente;
+    }
+
+    public abstract void fazerSom();
+}
+
+*********************************************************************************************************************************************************************************************
+package ExercicioAula5;
+
+public class Cachorro extends Animal {
+    public Cachorro(String nome, boolean isVivo, boolean isDoente) {
+        super(nome, isVivo, isDoente);
+    }
+
+    @Override
+    public void fazerSom() {
+        System.out.println("auau");
+    }
+}
+
+*********************************************************************************************************************************************************************************************
+
+package ExercicioAula5;
+
+public class CartaoCredito implements IMetodoPagamento{
+    public void Cobrar(){
+        System.out.println("Pedir os dados do cartão");
+        System.out.println("Verificou se o cartão é valido");
+        System.out.println("Mandou cobrar do banco");
+    }
+}
+
+*********************************************************************************************************************************************************************************************
+
+package ExercicioAula5;
+
+public class Gato extends Animal {
+    public Gato(String nome, boolean isVivo, boolean isDoente) {
+        super(nome, isVivo, isDoente);
+    }
+
+    @Override
+    public void fazerSom() {
+        System.out.println("miau");
+    }
+}
+
+*********************************************************************************************************************************************************************************************
+
+package ExercicioAula5;
+
+public interface IBichinho {
+    public void fazerSom();
+}
+
+*********************************************************************************************************************************************************************************************
+
+package ExercicioAula5;
+
+public interface MetodoPagamento {
+    void Cobrar();
+}
+
+*********************************************************************************************************************************************************************************************
+
+package ExercicioAula5;
+
+public abstract class Pessoa {
+    public abstract void falar();
+    public void respirar() {
+        System.out.println("respira");
+    }
+}
+
+*********************************************************************************************************************************************************************************************
+
+package ExercicioAula5;
+
+public class Pix implements MetodoPagamento{
+    public void Cobrar(){
+        System.out.println("gera o QRcode");
+    }
+}
+
+*********************************************************************************************************************************************************************************************
+
+package ExercicioAula5;
+
+public class Professor extends Pessoa {
+    @Override
+    public void falar() {
+        System.out.println("fala grego");
+    }
+}
+
+*********************************************************************************************************************************************************************************************
+
+package ExercicioAula5;
+
+public class Veterinario {
+    public void cuidarDoAnimal(Animal animal) {
+    }
+}
+****************************************************************************************************************************************************************************************
+Main
+
+package ExercicioAula5;
+
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        Cachorro cachorro = new Cachorro("Dog", true, false);
+        Cachorro cachorro2 = new Cachorro("bolota", true, false);
+        Cachorro cachorro3 = new Cachorro("thor", false, false);
+        Gato gato = new Gato("tito", true, true);
+        Gato gato2 = new Gato("rabito", true, true);
+        Gato gato3 = new Gato("kira", true, true);
+
+        ArrayList<Animal> animals = new ArrayList<>();
+        animals.add(cachorro);
+        animals.add(cachorro2);
+        animals.add(cachorro3);
+        animals.add(gato);
+        animals.add(gato2);
+        animals.add(gato3);
+
+        Veterinario v = new Veterinario();
+        for (Animal animal : animals) {
+            v.cuidarDoAnimal(animal);
+        }
+    }
+}
