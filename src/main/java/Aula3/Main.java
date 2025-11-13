@@ -4,7 +4,7 @@ public class Main {
     public static void main(String[] args) {
         System.out.println("=== EXERCÍCIOS DE ENCAPSULAMENTO E CONSTRUTORES ===\n");
         
-        // Exercício 1: ContaBancaria
+        // 1
         System.out.println("EXERCÍCIO 1 - ContaBancaria:");
         ContaBancaria conta = new ContaBancaria("12345-6", "João Silva");
         conta.exibirSaldo();
@@ -15,7 +15,7 @@ public class Main {
         conta.sacar(800.0); // Tentativa de saque maior que o saldo
         System.out.println();
         
-        // Exercício 2: Pessoa
+        // 2
         System.out.println("EXERCÍCIO 2 - Pessoa:");
         Pessoa pessoa1 = new Pessoa("Maria Santos", 25, "123.456.789-00");
         pessoa1.exibirInformacoes();
@@ -27,7 +27,7 @@ public class Main {
         pessoa3.exibirInformacoes();
         System.out.println();
         
-        // Exercício 3: Produto
+        // 3
         System.out.println("EXERCÍCIO 3 - Produto:");
         Produto produto = new Produto("Notebook", 2500.0, 10);
         produto.exibirInformacoes();
@@ -39,7 +39,7 @@ public class Main {
         produto.exibirInformacoes();
         System.out.println();
         
-        // Exercício 4: Aluno
+        // 4
         System.out.println("EXERCÍCIO 4 - Aluno:");
         Aluno aluno = new Aluno("Ana Oliveira", "2023001");
         aluno.exibirStatus();
@@ -49,7 +49,7 @@ public class Main {
         aluno.exibirStatus();
         System.out.println();
         
-        // Exercício 5: Retangulo
+        // 5
         System.out.println("EXERCÍCIO 5 - Retangulo:");
         Retangulo retangulo = new Retangulo(5.0, 3.0);
         retangulo.exibirInformacoes();
@@ -59,7 +59,7 @@ public class Main {
         retangulo.exibirInformacoes();
         System.out.println();
         
-        // Exercício 6: Livro
+        // 6
         System.out.println("EXERCÍCIO 6 - Livro:");
         Livro livro = new Livro("O Senhor dos Anéis", "J.R.R. Tolkien", 1954);
         livro.exibirDetalhes();
@@ -68,6 +68,6 @@ public class Main {
         livro.exibirDetalhes();
         System.out.println();
         
-        System.out.println("=== FIM DOS EXERCÍCIOS ===");
+        System.out.println("---- FIM DOS EXERCÍCIOS ----");
     }
 }

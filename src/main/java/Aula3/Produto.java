@@ -4,15 +4,13 @@ public class Produto {
     private String nome;
     private double preco;
     private int quantidadeEmEstoque;
-    
-    // Construtor
+
     public Produto(String nome, double preco, int quantidadeEmEstoque) {
         this.nome = nome;
         this.preco = preco;
         this.quantidadeEmEstoque = quantidadeEmEstoque;
     }
-    
-    // Getters e Setters
+
     public String getNome() {
         return nome;
     }
@@ -44,8 +42,7 @@ public class Produto {
             System.out.println("Erro: A quantidade em estoque deve ser maior ou igual a zero.");
         }
     }
-    
-    // Métodos para gerenciar estoque
+
     public void adicionarEstoque(int quantidade) {
         if (quantidade > 0) {
             this.quantidadeEmEstoque += quantidade;
@@ -67,13 +64,11 @@ public class Produto {
             System.out.println("Erro: Quantidade para venda deve ser maior que zero.");
         }
     }
-    
-    // Método para exibir informações do produto
+
     public void exibirInformacoes() {
-        System.out.println("=== Informações do Produto ===");
+        System.out.println("---- Informações do Produto ----");
         System.out.println("Nome: " + this.nome);
         System.out.println("Preço: R$ " + this.preco);
         System.out.println("Quantidade em estoque: " + this.quantidadeEmEstoque);
-        System.out.println("==============================");
     }
 } 

@@ -6,10 +6,9 @@ public class Personagem {
     public int nivel;
     
     public void mostrarStatus() {
-        System.out.println("=== Status do Personagem ===");
+        System.out.println("----- Status do Personagem ----");
         System.out.println("Nome: " + nome);
         System.out.println("Vida: " + vida);
         System.out.println("Nível: " + nivel);
-        System.out.println("==========================");
     }
 } 
