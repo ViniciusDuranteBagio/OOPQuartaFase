@@ -6,7 +6,7 @@ public class Gerente extends Funcionario{
     }
 
     @Override
-    public double getSalario() {
-return getSalario()*0.2;
+    public void calcBonus() {
+        System.out.println("bonus de: " + getSalario() * 0.2);
     }
 }
