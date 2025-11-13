@@ -4,7 +4,6 @@ public class Main {
     public static void main(String[] args) {
         System.out.println("=== EXERCÍCIOS DE HERANÇA ===\n");
         
-        // Exercício 1: Herança básica
         System.out.println("EXERCÍCIO 1 - Herança básica:");
         Aluno aluno = new Aluno();
         aluno.setNome("João Silva");
@@ -14,14 +13,12 @@ public class Main {
         aluno.exibirInformacoes();
         System.out.println();
         
-        // Exercício 2: Usando super() no construtor
         System.out.println("EXERCÍCIO 2 - Usando super() no construtor:");
         Aluno aluno2 = new Aluno("Maria Santos", 22, "2023002");
         System.out.println("=== Informações do Aluno ===");
         aluno2.exibirInformacoes();
         System.out.println();
         
-        // Exercício 3: Hierarquia de Veículos
         System.out.println("EXERCÍCIO 3 - Hierarquia de Veículos:");
         Carro carro = new Carro("Toyota", "Corolla", 4);
         Moto moto = new Moto("Honda", "CG 150", 150);
@@ -34,21 +31,18 @@ public class Main {
         moto.exibirDetalhes();
         System.out.println();
         
-        // Exercício 4: Adicionando métodos em herança
         System.out.println("EXERCÍCIO 4 - Adicionando métodos em herança:");
         Cachorro cachorro = new Cachorro("Rex", 3);
         cachorro.dormir();
         cachorro.latir();
         System.out.println();
         
-        // Exercício 5: Atributos protected
         System.out.println("EXERCÍCIO 5 - Atributos protected:");
         Cachorro cachorro2 = new Cachorro("Buddy", 2);
         cachorro2.exibirInformacoes();
         cachorro2.brincar();
         System.out.println();
         
-        // Exercício 6: Método compartilhado
         System.out.println("EXERCÍCIO 6 - Método compartilhado:");
         Gerente gerente = new Gerente("Carlos Silva", 5000.0, "TI");
         System.out.println("=== Informações do Gerente ===");
@@ -58,14 +52,12 @@ public class Main {
         gerente.exibirInformacoes();
         System.out.println();
         
-        // Exercício 7: Usando super em métodos
         System.out.println("EXERCÍCIO 7 - Usando super em métodos:");
         Eletronico eletronico = new Eletronico("Smartphone", 1500.0, 12);
         System.out.println("=== Detalhes do Eletrônico ===");
         eletronico.exibirDetalhes();
         System.out.println();
         
-        // Exercício 8: Hierarquia de Contas Bancárias
         System.out.println("EXERCÍCIO 8 - Hierarquia de Contas Bancárias:");
         ContaCorrente contaCorrente = new ContaCorrente("João", 5000.0, 15.0);
         ContaPoupanca contaPoupanca = new ContaPoupanca("Maria", 3000.0, 0.5);
@@ -78,7 +70,6 @@ public class Main {
         contaPoupanca.exibirDetalhes();
         System.out.println();
         
-        // Exercício 9: Classe base para jogos
         System.out.println("EXERCÍCIO 9 - Classe base para jogos:");
         Guerreiro guerreiro = new Guerreiro("Aragorn", 15, 85);
         Mago mago = new Mago("Gandalf", 20, 100);

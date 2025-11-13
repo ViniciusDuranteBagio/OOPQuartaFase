@@ -3,13 +3,11 @@ package Aula4;
 public class Moto extends Veiculo {
     private int cilindrada;
     
-    // Construtor
     public Moto(String marca, String modelo, int cilindrada) {
         super(marca, modelo);
         this.cilindrada = cilindrada;
     }
     
-    // Getter e Setter
     public int getCilindrada() {
         return cilindrada;
     }
@@ -18,7 +16,6 @@ public class Moto extends Veiculo {
         this.cilindrada = cilindrada;
     }
     
-    // Sobrescrevendo o método da superclasse
     @Override
     public void exibirDetalhes() {
         super.exibirDetalhes();

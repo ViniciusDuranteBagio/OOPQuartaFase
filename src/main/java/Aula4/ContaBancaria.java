@@ -4,13 +4,11 @@ public class ContaBancaria {
     protected String titular;
     protected double saldo;
     
-    // Construtor
     public ContaBancaria(String titular, double saldo) {
         this.titular = titular;
         this.saldo = saldo;
     }
     
-    // Getters e Setters
     public String getTitular() {
         return titular;
     }
@@ -27,7 +25,6 @@ public class ContaBancaria {
         this.saldo = saldo;
     }
     
-    // Método para exibir detalhes
     public void exibirDetalhes() {
         System.out.println("Titular: " + this.titular);
         System.out.println("Saldo: R$ " + this.saldo);

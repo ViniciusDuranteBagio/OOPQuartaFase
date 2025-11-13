@@ -5,14 +5,12 @@ public class Livro {
     private String autor;
     private int anoPublicacao;
     
-    // Construtor com todos os atributos
     public Livro(String titulo, String autor, int anoPublicacao) {
         this.titulo = titulo;
         this.autor = autor;
         this.anoPublicacao = anoPublicacao;
     }
     
-    // Getters e Setters
     public String getTitulo() {
         return titulo;
     }
@@ -41,7 +39,6 @@ public class Livro {
         }
     }
     
-    // Método para exibir detalhes do livro
     public void exibirDetalhes() {
         System.out.println("=== Detalhes do Livro ===");
         System.out.println("Título: " + this.titulo);

@@ -4,7 +4,6 @@ public class Main {
     public static void main(String[] args) {
         System.out.println("=== EXERCÍCIOS DE POO ===\n");
 
-        // 1. Criando um monstro e fazendo ele rugir
         System.out.println("1. TESTANDO A CLASSE MONSTRO:");
         Monstro monstro = new Monstro();
         monstro.nome = "Dragão";
@@ -12,7 +11,6 @@ public class Main {
         monstro.rugir();
         System.out.println();
 
-        // 2. Criando dois jogadores e fazendo um subir de nível
         System.out.println("2. TESTANDO A CLASSE JOGADOR:");
         Jogador jogador1 = new Jogador();
         jogador1.nome = "João";
@@ -30,7 +28,6 @@ public class Main {
         System.out.println("Novo nível do " + jogador1.nome + ": " + jogador1.nivel);
         System.out.println();
 
-        // 3. Criando um inimigo e fazendo ele atacar
         System.out.println("3. TESTANDO A CLASSE INIMIGO:");
         Inimigo inimigo = new Inimigo();
         inimigo.nome = "Goblin";
@@ -39,7 +36,6 @@ public class Main {
         inimigo.atacar();
         System.out.println();
 
-        // 4. Criando uma arma e usando ela
         System.out.println("4. TESTANDO A CLASSE ARMA:");
         Arma espada = new Arma();
         espada.nome = "Espada de Fogo";
@@ -47,7 +43,6 @@ public class Main {
         espada.usar();
         System.out.println();
 
-        // 5. Testando o sistema de inventário
         System.out.println("5. TESTANDO O SISTEMA DE INVENTÁRIO:");
         Inventario inventario = new Inventario();
         inventario.adicionarItem("Poção de Vida");
@@ -56,7 +51,6 @@ public class Main {
         inventario.mostrarItens();
         System.out.println();
 
-        // 6. Criando um personagem e mostrando seu status
         System.out.println("6. TESTANDO A CLASSE PERSONAGEM:");
         Personagem personagem = new Personagem();
         personagem.nome = "Aragorn";
@@ -65,16 +59,14 @@ public class Main {
         personagem.mostrarStatus();
         System.out.println();
 
-        // 7. Testando o sistema de energia (lâmpada)
         System.out.println("7. TESTANDO O SISTEMA DE ENERGIA:");
         Lampada lampada = new Lampada();
         lampada.ligar();
-        lampada.ligar(); // Tentando ligar novamente
+        lampada.ligar();
         lampada.desligar();
-        lampada.desligar(); // Tentando desligar novamente
+        lampada.desligar();
         System.out.println();
 
-        // 8. Testando o sistema de login
         System.out.println("8. TESTANDO O SISTEMA DE LOGIN:");
         Usuario usuario = new Usuario();
         usuario.nome = "admin";
@@ -83,7 +75,6 @@ public class Main {
         System.out.println("Verificando senha 'senhaerrada': " + usuario.verificarSenha("senhaerrada"));
         System.out.println();
 
-        // 9. Testando o sistema de pontuação
         System.out.println("9. TESTANDO O SISTEMA DE PONTUAÇÃO:");
         Jogo jogo = new Jogo();
         jogo.aumentarPontuacao(100);
@@ -92,7 +83,6 @@ public class Main {
         System.out.println("Pontuação final: " + jogo.pontuacao);
         System.out.println();
 
-        // 10. Testando o sistema de personagens jogáveis
         System.out.println("10. TESTANDO O SISTEMA DE PERSONAGENS JOGÁVEIS:");
         Heroi heroi1 = new Heroi();
         heroi1.nome = "Gandalf";

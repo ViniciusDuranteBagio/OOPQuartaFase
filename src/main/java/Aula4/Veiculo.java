@@ -4,13 +4,11 @@ public class Veiculo {
     protected String marca;
     protected String modelo;
     
-    // Construtor
     public Veiculo(String marca, String modelo) {
         this.marca = marca;
         this.modelo = modelo;
     }
     
-    // Getters e Setters
     public String getMarca() {
         return marca;
     }
@@ -27,7 +25,6 @@ public class Veiculo {
         this.modelo = modelo;
     }
     
-    // Método para exibir detalhes
     public void exibirDetalhes() {
         System.out.println("Marca: " + this.marca);
         System.out.println("Modelo: " + this.modelo);

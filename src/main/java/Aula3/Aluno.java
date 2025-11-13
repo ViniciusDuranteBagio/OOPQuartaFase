@@ -5,14 +5,12 @@ public class Aluno {
     private String matricula;
     private double nota;
     
-    // Construtor com nome e matrícula
     public Aluno(String nome, String matricula) {
         this.nome = nome;
         this.matricula = matricula;
         this.nota = 0.0;
     }
     
-    // Getters e Setters
     public String getNome() {
         return nome;
     }
@@ -41,7 +39,6 @@ public class Aluno {
         }
     }
     
-    // Método para exibir status do aluno
     public void exibirStatus() {
         System.out.println("=== Status do Aluno ===");
         System.out.println("Nome: " + this.nome);

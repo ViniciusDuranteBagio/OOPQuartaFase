@@ -4,13 +4,11 @@ public class Funcionario {
     protected String nome;
     protected double salario;
     
-    // Construtor
     public Funcionario(String nome, double salario) {
         this.nome = nome;
         this.salario = salario;
     }
     
-    // Getters e Setters
     public String getNome() {
         return nome;
     }

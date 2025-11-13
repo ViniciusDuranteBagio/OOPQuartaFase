@@ -5,14 +5,12 @@ public class Produto {
     private double preco;
     private int quantidadeEmEstoque;
     
-    // Construtor
     public Produto(String nome, double preco, int quantidadeEmEstoque) {
         this.nome = nome;
         this.preco = preco;
         this.quantidadeEmEstoque = quantidadeEmEstoque;
     }
     
-    // Getters e Setters
     public String getNome() {
         return nome;
     }
@@ -45,7 +43,6 @@ public class Produto {
         }
     }
     
-    // Métodos para gerenciar estoque
     public void adicionarEstoque(int quantidade) {
         if (quantidade > 0) {
             this.quantidadeEmEstoque += quantidade;

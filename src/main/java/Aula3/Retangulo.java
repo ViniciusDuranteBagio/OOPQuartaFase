@@ -4,13 +4,11 @@ public class Retangulo {
     private double largura;
     private double altura;
     
-    // Construtor
     public Retangulo(double largura, double altura) {
         this.largura = largura;
         this.altura = altura;
     }
     
-    // Getters e Setters
     public double getLargura() {
         return largura;
     }
@@ -35,17 +33,14 @@ public class Retangulo {
         }
     }
     
-    // Método para calcular área
     public double calcularArea() {
         return largura * altura;
     }
     
-    // Método para calcular perímetro
     public double calcularPerimetro() {
         return 2 * (altura + largura);
     }
     
-    // Método para exibir informações do retângulo
     public void exibirInformacoes() {
         System.out.println("=== Informações do Retângulo ===");
         System.out.println("Largura: " + this.largura);
