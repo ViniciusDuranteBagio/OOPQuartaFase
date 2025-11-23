@@ -25,7 +25,7 @@ public abstract class Animal {
     }
 
     public void setAge(int age) throws ValidacaoException {
-        if (age < 0) {
+        if (age <= 0) {
             throw new ValidacaoException("Idade deve ser maior que 0.");
         }
         this.age = age;

@@ -10,7 +10,7 @@ public class AgendaVeterinario {
         return this.consultas;
     }
     public void adicionarConsulta(Consulta consulta) throws ValidacaoException{
-        if(consultas.size() > 10){
+        if(consultas.size() >= 10){
             throw new ValidacaoException("Nao e possivel adicionar mais de 10 consultas na agenda");
         }
         consultas.add(consulta);
