@@ -1,3 +1,24 @@
+## Sistema de Agenda Veterinária 🐾
+
+Trabalho final de Programação Orientada a Objetos em Java, simulando a agenda de uma clínica veterinária.
+
+### Funcionalidades
+
+- Cadastro de consultas para **cachorros, gatos e coelhos**
+- Registro de **nome, idade, raça** e **tipo de atendimento**
+- Tipos de atendimento: **Banho, Tosa, Banho e Tosa, Consulta**
+- Registro de **doença** para consultas
+- Limite de **10 consultas** na agenda
+- Validações de entrada (menus, nome, idade, raça e respostas s/n)
+
+### Tecnologias
+
+- Java 21  
+- Maven  
+- JUnit 5  
+- Swing (`JOptionPane`)
+
+
 ## Repositorio para a aula de Orientação a Objetos da Quarta Fase de sistemas
 
 # Guia de Contribuição
