@@ -4,6 +4,6 @@ public class Cachorro extends Animal {
     }
     @Override
     public java.util.List<String> getCommonDiseases() {
-        return createDiseaseList("Cinomose", "Parvovirose", "Leptospirose", "Dermatite", "Otite");
+        return criarListaDoencas("Cinomose", "Parvovirose", "Leptospirose", "Dermatite", "Otite");
     }
 }

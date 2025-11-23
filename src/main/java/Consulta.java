@@ -1,12 +1,12 @@
 public class Consulta {
     private Animal animal;
     private String tipoAtendimento;
-    private String disease;
+    private String doenca;
 
-    public Consulta(Animal animal, String tipoAtendimento, String disease) {
+    public Consulta(Animal animal, String tipoAtendimento, String doenca) {
         this.animal = animal;
         this.tipoAtendimento = tipoAtendimento;
-        this.disease = disease;
+        this.doenca = doenca;
     }
 
     public Animal getAnimal() {
@@ -17,22 +17,37 @@ public class Consulta {
         return tipoAtendimento;
     }
 
-    public String getDisease() {
-        return disease;
+    public String getDoenca() {
+        return doenca;
     }
 
     public void setTipoAtendimento(String tipoAtendimento) {
         this.tipoAtendimento = tipoAtendimento;
     }
 
-    public void setDisease(String disease) {
-        this.disease = disease;
+    public void setDoenca(String doenca) {
+        this.doenca = doenca;
     }
 
     @Override
     public String toString() {
-        return "Animal: " + animal.getName()
-                + " | Tipo  do atendimento: " + tipoAtendimento
-                + " | Doenca: " + (disease == null ? "Nenhuma" : disease);
+        String tipoAnimal;
+
+        if (animal instanceof Cachorro) {
+            tipoAnimal = "Cachorro";
+        } else if (animal instanceof Gato) {
+            tipoAnimal = "Gato";
+        } else if (animal instanceof Coelho) {
+            tipoAnimal = "Coelho";
+        } else {
+            tipoAnimal = "Desconhecido";
+        }
+
+        return "Nome: " + animal.getNome()
+                + " | Tipo de animal: " + tipoAnimal
+                + " | Idade: " + animal.getIdade()
+                + " | Raca: " + animal.getRaca()
+                + " | Tipo de atendimento: " + tipoAtendimento
+                + " | Doenca: " + (doenca == null ? "Nenhuma" : doenca);
     }
 }

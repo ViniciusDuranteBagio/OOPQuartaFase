@@ -1,51 +1,51 @@
 public abstract class Animal {
-    private String name;
-    private int age;
-    private String breed;
+    private String nome;
+    private int idade;
+    private String raca;
 
-    public Animal(String name, int age, String breed) throws ValidacaoException {
-        setName(name);
-        setAge(age);
-        setBreed(breed);
+    public Animal(String nome, int idade, String raca) throws ValidacaoException {
+        setNome(nome);
+        setIdade(idade);
+        setRaca(raca);
     }
 
-    public String getName() {
-        return name;
+    public String getNome() {
+        return nome;
     }
 
-    public void setName(String name) throws ValidacaoException {
-        if (name == null || name.trim().length() < 2) {
+    public void setNome(String nome) throws ValidacaoException {
+        if (nome == null || nome.trim().length() < 2) {
             throw new ValidacaoException("Nome deve ter pelo menos 2 caracteres.");
         }
-        this.name = name;
+        this.nome = nome;
     }
 
-    public int getAge() {
-        return age;
+    public int getIdade() {
+        return idade;
     }
 
-    public void setAge(int age) throws ValidacaoException {
-        if (age <= 0) {
+    public void setIdade(int idade) throws ValidacaoException {
+        if (idade <= 0) {
             throw new ValidacaoException("Idade deve ser maior que 0.");
         }
-        this.age = age;
+        this.idade = idade;
     }
 
-    public String getBreed() {
-        return breed;
+    public String getRaca() {
+        return raca;
     }
 
-    public void setBreed(String breed) throws ValidacaoException {
-        if (breed == null || breed.trim().isEmpty()) {
+    public void setRaca(String raca) throws ValidacaoException {
+        if (raca == null || raca.trim().isEmpty()) {
             throw new ValidacaoException("Raca deve ser informada.");
         }
-        this.breed = breed;
+        this.raca = raca;
     }
 
-    protected java.util.List<String> createDiseaseList(String... diseases) {
+    protected java.util.List<String> criarListaDoencas(String... doencas) {
         java.util.List<String> list = new java.util.ArrayList<>();
-        for (String disease : diseases) {
-            list.add(disease);
+        for (String doenca : doencas) {
+            list.add(doenca);
         }
         return list;
     }

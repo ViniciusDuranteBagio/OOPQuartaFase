@@ -4,6 +4,6 @@ public class Coelho extends Animal {
     }
     @Override
     public java.util.List<String> getCommonDiseases() {
-        return createDiseaseList("Mixomatose", "Pasteurelose", "Sarna Auricular", "Pododermatite", "Coccidiose");
+        return criarListaDoencas("Mixomatose", "Pasteurelose", "Sarna Auricular", "Pododermatite", "Coccidiose");
     }
 }

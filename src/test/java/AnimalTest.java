@@ -7,9 +7,9 @@ public class AnimalTest {
     void deveCriarCachorroComDadosCorretos() throws ValidacaoException {
         Cachorro cachorro = new Cachorro("Bob", 4, "Rusky");
 
-        Assertions.assertEquals("Bob", cachorro.getName());
-        Assertions.assertEquals(4, cachorro.getAge());
-        Assertions.assertEquals("Rusky", cachorro.getBreed());
+        Assertions.assertEquals("Bob", cachorro.getNome());
+        Assertions.assertEquals(4, cachorro.getIdade());
+        Assertions.assertEquals("Rusky", cachorro.getRaca());
     }
 
     @Test

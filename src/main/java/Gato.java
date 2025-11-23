@@ -4,6 +4,6 @@ public class Gato extends Animal {
     }
     @Override
     public java.util.List<String> getCommonDiseases() {
-        return createDiseaseList("PIF (Peritonite Infecciosa Felina)", "Rinotraqueíte", "Calicivirose", "Panleucopenia", "Otite");
+        return criarListaDoencas("PIF (Peritonite Infecciosa Felina)", "Rinotraqueíte", "Calicivirose", "Panleucopenia", "Otite");
     }
 }
