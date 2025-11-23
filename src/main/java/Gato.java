@@ -1,5 +1,5 @@
 public class Gato extends Animal {
-    public Gato(String name, int age, String breed) {
+    public Gato(String name, int age, String breed) throws ValidacaoException{
         super(name, age, breed);
     }
     @Override
