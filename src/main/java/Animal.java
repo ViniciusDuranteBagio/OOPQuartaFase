@@ -41,4 +41,16 @@ public abstract class Animal {
         return list;
     }
     public abstract java.util.List<String> getCommonDiseases();
+
+
+    public String escolherDoenca() {
+        java.util.List<String> diseases = getCommonDiseases();
+        StringBuilder mensagem = new StringBuilder("Escolha a doenca:\n");
+        for(int i = 0; i <diseases.size(); i++) {
+            mensagem.append(i + 1).append(" - ").append(diseases.get(i)).append("\n");
+        }
+        String opcao = javax.swing.JOptionPane.showInputDialog(mensagem.toString());
+        int indice = Integer.parseInt(opcao) -1;
+        return diseases.get(indice);
+    }
 }
