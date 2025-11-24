@@ -1,3 +1,5 @@
+package trabalho_final;
+
 import javax.swing.JOptionPane;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
@@ -49,7 +51,7 @@ public class Main {
         try {
             String nome = JOptionPane.showInputDialog("Diga o nome do animal para cancelar a consulta");
             agenda.cancelarConsulta(nome);
-            JOptionPane.showMessageDialog(null, "Consulta cancelada");
+            JOptionPane.showMessageDialog(null, "trabalho_final.Consulta cancelada");
         } catch (Exception e) {
             JOptionPane.showMessageDialog(null, e.getMessage());
         }
@@ -58,7 +60,7 @@ public class Main {
     private static void cadastrarConsulta(Agenda agenda) {
         try {
             String a = JOptionPane.showInputDialog(
-                    "Tipo de animal:\n1 - Cachorro\n2 - Gato\n3 - Coelho");
+                    "Tipo de animal:\n1 - trabalho_final.Cachorro\n2 - trabalho_final.Gato\n3 - trabalho_final.Coelho");
 
             Animal animal;
 
@@ -88,7 +90,7 @@ public class Main {
                     break;
 
                 default:
-                    JOptionPane.showMessageDialog(null, "Animal inválido.");
+                    JOptionPane.showMessageDialog(null, "trabalho_final.Animal inválido.");
                     return;
             }
             String t = JOptionPane.showInputDialog(
@@ -106,7 +108,7 @@ public class Main {
                 case "3": tipo = "Banho e Tosa"; break;
                 case "4": tipo = "Tratamento"; break;
                 default:
-                    JOptionPane.showMessageDialog(null, "Atendimento inválido.");
+                    JOptionPane.showMessageDialog(null, "trabalho_final.Atendimento inválido.");
                     return;
             }
 
@@ -153,7 +155,7 @@ public class Main {
             Consulta consulta = new Consulta(animal, atendimento, data, doenca);
             agenda.adicionarConsulta(consulta);
 
-            JOptionPane.showMessageDialog(null, "Consulta cadastrada.");
+            JOptionPane.showMessageDialog(null, "trabalho_final.Consulta cadastrada.");
 
         } catch (Exception e) {
             JOptionPane.showMessageDialog(null, e.getMessage());

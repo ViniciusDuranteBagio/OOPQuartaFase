@@ -1,3 +1,5 @@
+package trabalho_final;
+
 public class Cachorro extends Animal {
 
     public Cachorro(String nome, String idade, String raca) throws ValidacaoException {

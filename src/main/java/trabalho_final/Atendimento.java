@@ -1,3 +1,5 @@
+package trabalho_final;
+
 public class Atendimento {
     private String tipo;
 

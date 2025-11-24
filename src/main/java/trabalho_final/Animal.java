@@ -1,3 +1,5 @@
+package trabalho_final;
+
 public abstract class Animal {
     private String nome;
     private String idade;

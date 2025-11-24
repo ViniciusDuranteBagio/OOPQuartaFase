@@ -1,3 +1,5 @@
+package trabalho_final;
+
 public class Coelho extends Animal {
 
     public Coelho(String nome, String idade, String raca) throws ValidacaoException {

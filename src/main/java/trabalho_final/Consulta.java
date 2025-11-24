@@ -1,3 +1,5 @@
+package trabalho_final;
+
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.time.format.DateTimeParseException;
@@ -18,10 +20,10 @@ public class Consulta {
             throws ValidacaoException {
 
         if (animal == null)
-            throw new ValidacaoException("Animal inválido.");
+            throw new ValidacaoException("trabalho_final.Animal inválido.");
 
         if (atendimento == null)
-            throw new ValidacaoException("Atendimento inválido.");
+            throw new ValidacaoException("trabalho_final.Atendimento inválido.");
 
         if (data == null || data.trim().isEmpty())
             throw new ValidacaoException("Data inválida.");
