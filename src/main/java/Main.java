@@ -1,68 +1,108 @@
 import javax.swing.*;
 import java.util.ArrayList;
 
+
 public class Main {
     public static void main(String[] args) {
 
-        int inputUsuario1 = -1;
-        int animal = -1;
-        int tipoServico= -1;
+        ArrayList<Consulta> agenda = new ArrayList<>();
 
-        ArrayList<String> agenda =  new ArrayList<>(10);
+        int menu = -1;
 
-        Cachorro cachorro = new Cachorro();
-        Gato gato = new Gato();
-        Coelho coelho = new Coelho();
-        Consulta consulta = new Consulta();
+        String menu1 =
+                "--- Menu ---\n" +
+                        "1- Cadastrar consulta\n" +
+                        "2- Listar consultas\n" +
+                        "0- Sair";
 
-        String menu1 = "--- Menu ---\n" +
-                "1- Cadastrar animal para consulta\n" +
-                "2- Listar consultas\n" +
-                "0- Sair do sistema";
+        String menu2 =
+                "Selecione o animal\n" +
+                        "1- Cachorro\n" +
+                        "2- Gato\n" +
+                        "3- Coelho\n" +
+                        "0- Voltar";
 
-        String menu2 = "Selecione o animal para ser cadastrado\n" +
-                "1- Cachorro\n" +
-                "2- Gato\n" +
-                "3- Coelho\n" +
-                "0- Voltar para o menu";
+        String menu3 =
+                "Tipo de Serviço:\n" +
+                        "1- Banho\n" +
+                        "2- Banho e Tosa\n" +
+                        "3- Tosa\n" +
+                        "4- Consulta";
 
-        String menu3 = "Selecione o tipo de serviço\n" +
-                "1- Banho\n" +
-                "2- Banho e Tosa\n" +
-                "3- Tosa\n" +
-                "4- Consulta\n";
+        while (menu != 0) {
 
-        while (inputUsuario1 != 0 || animal != 0 || tipoServico != 0) {
+            menu = Integer.parseInt(JOptionPane.showInputDialog(menu1));
 
-            inputUsuario1 = Integer.parseInt(JOptionPane.showInputDialog(menu1));
+            if (menu == 1) {
 
-            if (inputUsuario1 == 1) {
-                animal = Integer.parseInt(JOptionPane.showInputDialog(menu2));
-
-                if (animal == 1) {
-                    cachorro.setNome(JOptionPane.showInputDialog("Digite o nome do(a) cachorro(a)"));
-                    cachorro.setIdade(Double.parseDouble(JOptionPane.showInputDialog("Digite a idade do(a) cachorro(a)")));
-                    cachorro.setRaca(JOptionPane.showInputDialog(("Digite a raça do(a) cachorro(a)")));
+                if (agenda.size() >= 10) {
+                    JOptionPane.showMessageDialog(null, "Agenda cheia! Máximo 10 consultas.");
+                    continue;
                 }
-                else if (animal == 2) {
-                    gato.setNome(JOptionPane.showInputDialog("Digite o nome do(a) gato(a)"));
-                    gato.setIdade(Double.parseDouble(JOptionPane.showInputDialog("Digite a idade do(a) gato(a)")));
-                    gato.setRaca(JOptionPane.showInputDialog(("Digite a raça do(a) gato(a)")));
+
+                int animalOpc = Integer.parseInt(JOptionPane.showInputDialog(menu2));
+                if (animalOpc == 0) continue;
+
+                Animal animal = null;
+
+                try {
+                    if (animalOpc == 1) animal = new Cachorro();
+                    if (animalOpc == 2) animal = new Gato();
+                    if (animalOpc == 3) animal = new Coelho();
+
+                    animal.setNome(JOptionPane.showInputDialog("Nome do animal:"));
+                    animal.setIdade(Double.parseDouble(JOptionPane.showInputDialog("Idade:")));
+                    animal.setRaca(JOptionPane.showInputDialog("Raça:"));
+
+                } catch (ValidacaoException e) {
+                    JOptionPane.showMessageDialog(null, e.getMessage());
+                    continue;
                 }
-                else if (animal == 3) {
-                    coelho.setNome(JOptionPane.showInputDialog("Digite o nome do(a) coelho(a)"));
-                    coelho.setIdade(Double.parseDouble(JOptionPane.showInputDialog("Digite a idade do(a) coelho(a)")));
-                    coelho.setRaca(JOptionPane.showInputDialog(("Digite a raça do(a) coelho(a)")));
+
+                int tipoServico = Integer.parseInt(JOptionPane.showInputDialog(menu3));
+
+                String servico = "";
+                if (tipoServico == 1) servico = "Banho";
+                if (tipoServico == 2) servico = "Banho e Tosa";
+                if (tipoServico == 3) servico = "Tosa";
+                if (tipoServico == 4) servico = "Consulta";
+
+                String doenca = "";
+
+                if (servico.equals("Consulta")) {
+                    int doente = JOptionPane.showConfirmDialog(null,
+                            "O animal está doente?", "Doença", JOptionPane.YES_NO_OPTION);
+
+                    if (doente == 0) {
+                        String[] lista = animal.getDoencas();
+                        String msg = "Selecione a doença:\n";
+                        for (int i=0; i<lista.length; i++) {
+                            msg += (i+1) + " - " + lista[i] + "\n";
+                        }
+                        int d = Integer.parseInt(JOptionPane.showInputDialog(msg));
+                        doenca = lista[d-1];
+                    }
                 }
-            } else if (inputUsuario1 == 2) {
+
+                agenda.add(new Consulta(animal, servico, doenca));
+
+                JOptionPane.showMessageDialog(null, "Agendamento cadastrado!");
+
+            } else if (menu == 2) {
+
                 if (agenda.isEmpty()) {
                     JOptionPane.showMessageDialog(null, "Nenhuma consulta cadastrada.");
+                    continue;
                 }
-            } else if (inputUsuario1 == 0) {
-                break;
-            }
-            else {
-                JOptionPane.showMessageDialog(null,"Número inválido");
+
+                StringBuilder sb = new StringBuilder("Consultas:\n\n");
+
+                for (Consulta c : agenda) {
+                    sb.append(c.toString()).append("\n");
+                }
+
+                JOptionPane.showMessageDialog(null, sb.toString());
+
             }
         }
     }
