@@ -20,10 +20,10 @@ public class Consulta {
             throws ValidacaoException {
 
         if (animal == null)
-            throw new ValidacaoException("trabalho_final.Animal inválido.");
+            throw new ValidacaoException("Animal inválido.");
 
         if (atendimento == null)
-            throw new ValidacaoException("trabalho_final.Atendimento inválido.");
+            throw new ValidacaoException("Atendimento inválido.");
 
         if (data == null || data.trim().isEmpty())
             throw new ValidacaoException("Data inválida.");

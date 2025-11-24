@@ -6,7 +6,7 @@ public class Agenda {
 
     public void adicionarConsulta(Consulta c) throws ValidacaoException {
         if (total >= 10) {
-            throw new ValidacaoException("trabalho_final.Agenda atingiu o limite de 10 consultas.");
+            throw new ValidacaoException("Agenda atingiu o limite de 10 consultas.");
         }
         consultas[total] = c;
         total++;
@@ -49,7 +49,7 @@ public class Agenda {
                     .append(c.getAnimal().getNome())
                     .append(" (").append(c.getAnimal().getClass().getSimpleName()).append(")")
                     .append(" | Idade: ").append(c.getAnimal().getIdade())
-                    .append(" | trabalho_final.Atendimento: ").append(c.getAtendimento().getTipo())
+                    .append(" | Atendimento: ").append(c.getAtendimento().getTipo())
                     .append(" | Data: ").append(c.getData());
 
             if (c.getDoenca() != null) {
