@@ -8,11 +8,10 @@ import java.util.Scanner;
 
 public class Main {
 
-    static Agenda agenda = new Agenda();
-    static Scanner scanner = new Scanner(System.in);
+    private static final Agenda agenda = new Agenda();
+    private static final Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) {
-
         boolean rodando = true;
 
         while (rodando) {
@@ -21,54 +20,67 @@ public class Main {
             System.out.println("2 - Cadastrar consulta");
             System.out.println("0 - Sair");
             System.out.print("> ");
-
-            String opcao = scanner.nextLine();
+            String opcao = scanner.nextLine().trim();
 
             switch (opcao) {
                 case "1":
                     listarConsultas();
                     break;
-
                 case "2":
                     cadastrarConsulta();
                     break;
-
                 case "0":
-                    System.out.println("Encerrando...");
                     rodando = false;
                     break;
-
                 default:
                     System.out.println("Opção inválida.");
             }
         }
+
+        scanner.close();
     }
 
     private static void listarConsultas() {
         List<Consulta> consultas = agenda.listar();
 
-        if (consultas.isEmpty()) {
-            System.out.println("Nenhuma consulta cadastrada.");
+        if (consultas == null || consultas.isEmpty()) {
+            System.out.println("Nenhuma cadastrada ainda");
+            System.out.println("Pressione ENTER para voltar.");
+            scanner.nextLine();
             return;
         }
 
+        System.out.println("\nConsultas cadastradas:");
         int i = 1;
         for (Consulta c : consultas) {
             System.out.println(i++ + ") " + c);
         }
+
+        System.out.println("\nPressione ENTER para voltar.");
+        scanner.nextLine();
     }
 
     private static void cadastrarConsulta() {
         try {
-            System.out.print("Tipo de animal (1-Cachorro, 2-Gato, 3-Coelho): ");
-            String tipoAnimal = scanner.nextLine();
+            System.out.println("Tipo de animal:");
+            System.out.println("1 - Cachorro");
+            System.out.println("2 - Gato");
+            System.out.println("3 - Coelho");
+            System.out.print("> ");
+            String tipoAnimal = scanner.nextLine().trim();
+
+            if (!tipoAnimal.matches("[123]")) {
+                System.out.println("Tipo de animal inválido.");
+                return;
+            }
 
             System.out.print("Nome do animal: ");
             String nome = scanner.nextLine();
             ValidacaoUtils.validarNome(nome);
 
             System.out.print("Idade do animal: ");
-            int idade = Integer.parseInt(scanner.nextLine());
+            String idadeStr = scanner.nextLine().trim();
+            int idade = Integer.parseInt(idadeStr);
             ValidacaoUtils.validarIdade(idade);
 
             System.out.print("Raça do animal: ");
@@ -77,18 +89,9 @@ public class Main {
 
             Animal animal;
             switch (tipoAnimal) {
-                case "1":
-                    animal = new Cachorro(nome, idade, raca);
-                    break;
-                case "2":
-                    animal = new Gato(nome, idade, raca);
-                    break;
-                case "3":
-                    animal = new Coelho(nome, idade, raca);
-                    break;
-                default:
-                    System.out.println("Tipo inválido.");
-                    return;
+                case "1": animal = new Cachorro(nome, idade, raca); break;
+                case "2": animal = new Gato(nome, idade, raca); break;
+                default:  animal = new Coelho(nome, idade, raca); break;
             }
 
             System.out.println("Tipo de atendimento:");
@@ -97,42 +100,50 @@ public class Main {
             System.out.println("3 - Banho e Tosa");
             System.out.println("4 - Consulta");
             System.out.print("> ");
+            String tipoAt = scanner.nextLine().trim();
 
-            String tipo = scanner.nextLine();
-            Consulta.TipoAtendimento atendimento;
-
-            switch (tipo) {
-                case "1": atendimento = Consulta.TipoAtendimento.BANHO; break;
-                case "2": atendimento = Consulta.TipoAtendimento.TOSA; break;
-                case "3": atendimento = Consulta.TipoAtendimento.BANHO_TOSA; break;
-                case "4": atendimento = Consulta.TipoAtendimento.CONSULTA; break;
+            Consulta.TipoAtendimento tipo;
+            switch (tipoAt) {
+                case "1": tipo = Consulta.TipoAtendimento.BANHO; break;
+                case "2": tipo = Consulta.TipoAtendimento.TOSA; break;
+                case "3": tipo = Consulta.TipoAtendimento.BANHO_TOSA; break;
+                case "4": tipo = Consulta.TipoAtendimento.CONSULTA; break;
                 default:
-                    System.out.println("Tipo inválido.");
+                    System.out.println("Tipo de atendimento inválido.");
                     return;
             }
 
             String doenca = null;
 
-            if (atendimento == Consulta.TipoAtendimento.CONSULTA) {
-                System.out.print("O animal está doente (s/n)? ");
-                if (scanner.nextLine().equalsIgnoreCase("s")) {
-                    System.out.print("Informe a doença: ");
-                    doenca = scanner.nextLine();
+            if (tipo == Consulta.TipoAtendimento.CONSULTA) {
+                System.out.print("O animal está doente? (s/n): ");
+                String resp = scanner.nextLine().trim();
 
-                    if (!animal.possuiDoenca(doenca)) {
-                        System.out.println("Doença inválida para esse animal.");
-                        return;
+                if (resp.equalsIgnoreCase("s")) {
+                    while (true) {
+                        System.out.print("Informe a doença (ou ENTER para cancelar): ");
+                        String entrada = scanner.nextLine().trim();
+
+                        if (entrada.isEmpty()) return;
+
+                        if (animal.possuiDoenca(entrada)) {
+                            doenca = entrada;
+                            break;
+                        } else {
+                            System.out.println("Doença inválida para esse tipo de animal.");
+                            System.out.print("Tentar novamente? (s/n): ");
+                            if (!scanner.nextLine().trim().equalsIgnoreCase("s")) return;
+                        }
                     }
                 }
             }
 
-            Consulta consulta = new Consulta(animal, atendimento, doenca);
+            Consulta consulta = new Consulta(animal, tipo, doenca);
             agenda.adicionar(consulta);
-
             System.out.println("Consulta cadastrada com sucesso!");
 
-        } catch (ValidacaoException e) {
-            System.out.println("Erro: " + e.getMessage());
+        } catch (ValidacaoException ve) {
+            System.out.println("Erro: " + ve.getMessage());
         } catch (Exception e) {
             System.out.println("Entrada inválida.");
         }
