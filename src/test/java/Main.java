@@ -15,10 +15,11 @@ public class Main {
 
             switch(op){
                 case "1":
-                    if(agenda.tamanho()==0) JOptionPane.showMessageDialog(null,"Nenhuma cadastrada ainda");
-                    else{
+                    if(agenda.tamanho() == 0) {
+                        JOptionPane.showMessageDialog(null,"Nenhuma cadastrada ainda");
+                    } else {
                         StringBuilder sb = new StringBuilder();
-                        int i=1;
+                        int i = 1;
                         for(Consulta c: agenda.listar()){
                             sb.append(i++).append(") ").append(c.toString()).append("\n");
                         }
@@ -32,33 +33,54 @@ public class Main {
 
                     try{
                         String nome = JOptionPane.showInputDialog("Nome do animal");
+                        if(nome == null) break;
+
                         String idadeS = JOptionPane.showInputDialog("Idade");
+                        if(idadeS == null) break;
+
                         String raca = JOptionPane.showInputDialog("Raça");
+                        if(raca == null) break;
 
                         int idade = Integer.parseInt(idadeS);
 
                         Animal animal;
-                        if(tipoAnimal.equalsIgnoreCase("Cachorro")) animal = new Cachorro(nome,idade,raca);
-                        else if(tipoAnimal.equalsIgnoreCase("Gato")) animal = new Gato(nome,idade,raca);
-                        else if(tipoAnimal.equalsIgnoreCase("Coelho")) animal = new Coelho(nome,idade,raca);
+                        if(tipoAnimal.equalsIgnoreCase("Cachorro")) animal = new Cachorro(nome, idade, raca);
+                        else if(tipoAnimal.equalsIgnoreCase("Gato")) animal = new Gato(nome, idade, raca);
+                        else if(tipoAnimal.equalsIgnoreCase("Coelho")) animal = new Coelho(nome, idade, raca);
                         else throw new ValidacaoException("Tipo inválido");
 
                         String atendimento = JOptionPane.showInputDialog("Atendimento: Banho / Tosa / Banho e Tosa / Consulta");
-                        TipoAtendimento ta = TipoAtendimento.fromString(atendimento);
+                        if(atendimento == null) break;
+
+                        String ta = TipoAtendimento.fromString(atendimento);
+                        if(ta == null) throw new ValidacaoException("Tipo de atendimento inválido");
+
+                        String nomeCliente = JOptionPane.showInputDialog("Nome do cliente");
+                        if(nomeCliente == null) break;
+
+                        String data = JOptionPane.showInputDialog("Data da consulta");
+                        if(data == null) break;
 
                         String doenca = "";
-                        if(ta == TipoAtendimento.CONSULTA){
+                        if(ta.equals(TipoAtendimento.CONSULTA)){
                             int resp = JOptionPane.showConfirmDialog(null,"O animal está doente?");
                             if(resp == JOptionPane.YES_OPTION){
                                 String[] poss = animal.getDoencas();
-                                String escolha = (String) JOptionPane.showInputDialog(null,"Escolha a doença","Doenças",
-                                        JOptionPane.PLAIN_MESSAGE,null,poss,poss[0]);
+                                String escolha = (String) JOptionPane.showInputDialog(
+                                        null,
+                                        "Escolha a doença",
+                                        "Doenças",
+                                        JOptionPane.PLAIN_MESSAGE,
+                                        null,
+                                        poss,
+                                        poss.length > 0 ? poss[0] : null
+                                );
                                 if(escolha == null) throw new ValidacaoException("Doença não selecionada");
                                 doenca = escolha;
                             }
                         }
 
-                        Consulta c = new Consulta(animal,ta,doenca);
+                        Consulta c = new Consulta(ta, nomeCliente, nome, data, doenca);
                         agenda.adicionar(c);
                         JOptionPane.showMessageDialog(null,"Consulta cadastrada");
 
@@ -77,4 +99,3 @@ public class Main {
         }
     }
 }
-
