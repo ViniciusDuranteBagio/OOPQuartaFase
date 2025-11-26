@@ -65,13 +65,14 @@ public class Main {
                                         "\nRaça: " + cachorro.raca +
                                         "\nDoença: " + doencaCachorro +
                                         "\nPresione 'OK' após confirmar os dados para agendar sua consulta");
-                                agendaVet.agenda.add("Uma consulta agendada para o paciente " + cachorro.nome + "\nAnimal: Cachorro\nRaça: " + cachorro.raca + "/nDoenca: " + doencaDog);
+                                agendaVet.agenda.add("Uma consulta agendada para o paciente " + cachorro.nome + "\nAnimal: Cachorro\nRaça: " + cachorro.raca + "\nDoenca: " + doencaCachorro);
                             } else {
                                 JOptionPane.showMessageDialog(null, "Nome: " + cachorro.nome +
                                         "\nIdade: " + cachorro.idade +
                                         "\nRaça: " + cachorro.raca +
                                         "\nDoença: " + doencaDog +
                                         "\nPresione 'OK' após confirmar os dados para agendar sua consulta");
+                                agendaVet.agenda.add("Uma consulta agendada para o paciente " + cachorro.nome + "\nAnimal: Cachorro\nRaça: " + cachorro.raca + "/nDoenca: " + doencaDog);
                             }
                         }
                         if (tipoAnimal == 2) {
@@ -138,12 +139,8 @@ public class Main {
                     }
                 }
             }
-            if (opcao == 2) {
-                String nomes = "";
-                for (String nome : agendaVet.agenda) {
-                    nomes += nome + "\n";
-                    JOptionPane.showMessageDialog(null, agendaVet.agenda);
-                }
+            else if (opcao == 2) {
+                JOptionPane.showMessageDialog(null,agendaVet.agenda);
             } else {
                 JOptionPane.showMessageDialog(null,"escolha uma opção válida");
             }
