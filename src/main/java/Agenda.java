@@ -40,7 +40,7 @@ public class Agenda {
         int v3 = v2 - 2;
         int v4 = v3 + 1;
 
-        return new int[]{q - 8, v1, v2, v3, v4}; //vazei a ordem
+        return new int[]{q - 8, v1, v2, v3, v4};
     }
 
     private void reconstruirChave() {
