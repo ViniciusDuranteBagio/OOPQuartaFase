@@ -8,7 +8,7 @@ public class Main {
         Gato gato = new Gato();
         Coelho coelho = new Coelho();
 
-        while (true) {d
+        while (true) {
 
             int opcao = Integer.parseInt(JOptionPane.showInputDialog("Selecione uma opção:" +
                     "\n1 - Agendar uma nova consulta" +
