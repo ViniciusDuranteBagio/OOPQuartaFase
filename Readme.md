@@ -1,3 +1,50 @@
+# 🐾  **Sistema de Agenda Veterinária**
+
+![Demonstração](src/assets/gifcapamd.gif)
+
+![Made With Java](https://img.shields.io/badge/Made%20with-Java-red?logo=java&logoColor=white)  
+![Status](https://img.shields.io/badge/FINALIZADO-brightgreen?style=for-the-badge)
+
+## ✨ **Destaques do Projeto ✨**
+
+🔒 API   
+Sugere nomes aleatórios. Tentei proteger a chave da API: fragmentando, codificando duas vezes em Base64 e só reconstruída via senha SHA-256. Mesmo com o código público no GitHub, a chave permanece oclusa, pelo menos para os mais leigos acredito eu, espantando assim, curiosos que poderiam utilizar a chave estourando meu limite de requisições antes do professor corrigir meu trabalho.
+
+🖥️ Interface Gráfica Interativa
+Botões estilizados com efeitos hover, GIF animado, relógio em tempo real, modais personalizados e feedback sonoro em cliques.
+
+🎵 Música Ambiente Inteligente  
+Controle de reprodução, volume ajustável, memória de volume, loop contínuo e integração com botões da interface.
+
+📅 Gestão Diária Eficiente  
+Limite de 10 consultas por dia, reset automático da lista quando troca de data, mantendo tudo organizado sem intervenção manual. E sim: se o dia mudar, todos os dados da lista vão para o espaço. Espero que o PetShop não seja 24h — acredito que não. Quem, em sã consciência, vai levar um coelho para tosar às 23h59 da noite?
+
+✅ Validações Avançadas e Modularidade  
+Classes separadas para animais, doenças, consultas e música, com validações robustas para evitar dados inconsistentes.
+
+⚡ Performance e Eficiência  
+Sistema leve e ágil, roda até em uma sanduicheira.
+
+🖼️ Imagens do sistema:  
+Ícones e figuras utilizadas nas telas, como fotos de animais e imagens para selecionar o tipo de consulta, deixando a interface mais intuitiva e agradável.
+
+🖨️ Impressão de Consultas  
+Compatível com qualquer impressora via API nativa do Java, facilitando o dia a dia da clínica.
+
+
+
+👨‍💻 Autor  
+Desenvolvido por Henri Zomer  
+[![Instagram](https://img.shields.io/badge/Instagram-@henrizomer-E4405F?logo=instagram&logoColor=white)](https://instagram.com/henrizomer)  
+Voltado para uso acadêmico, com foco em segurança e modularidade.
+
+---
+
+# 📝 Instruções fornecidas pelo professor
+
+*(Conteúdo original enviado pelo professor abaixo)*
+
+
 ## Repositorio para a aula de Orientação a Objetos da Quarta Fase de sistemas
 
 # Guia de Contribuição
