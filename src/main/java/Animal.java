@@ -45,12 +45,12 @@ public abstract class Animal {
 
     @Override
     public String toString(){
-        String texto = "Nome: " + getNome() + "\nIdade: " + getIdade() + "\nRaça: " + getRaca() +
+        String resumoAnimal = "Nome: " + getNome() + "\nIdade: " + getIdade() + "\nRaça: " + getRaca() +
                 "\nDoente: " + (estaDoente() ? "Sim" : "Não");
         if(estaDoente() && getDoenca() != null){
-            texto += "\nDoença: " + getDoenca();
+            resumoAnimal += "\nDoença: " + getDoenca();
         }
-        return texto;
+        return resumoAnimal;
     }
 
 }
