@@ -1,4 +1,10 @@
-package PACKAGE_NAME;
+public class Coelho extends Animal {
+    public Coelho(String nome, int idade, String raca) {
+        super(nome, idade, raca);
+    }
 
-public class coelho {
+    @Override
+    public String[] getDoencasComuns() {
+        return new String[]{"Mixomatose", "Pasteurelose", "Sarna Auricular", "Pododermatite", "Coccidiose"};
+    }
 }
