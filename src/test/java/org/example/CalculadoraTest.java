@@ -1,29 +1,38 @@
 package org.example;
 
-import Aula8.Calculadora;
-import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
-
 public class CalculadoraTest {
-  @Test
-  public void testElevadoAoQuadrado6() {
-    Calculadora calculadora = new Calculadora();
-    int resultado = calculadora.elevarAoQuadrado(6);
-    assertEquals(36, resultado);
-  }
 
-  @Test
-  public void testElevadoAoQuadrado9() {
-    Calculadora calculadora = new Calculadora();
-    int resultado = calculadora.elevarAoQuadrado(9);
-    assertEquals(81, resultado);
-  }
+    @Test
+    public void testSomar() {
+        Calculadora calc = new Calculadora();
+        assertEquals(7, calc.somar(3, 4));
+    }
 
-  @Test
-  public void testeSubtrair() {
-    Calculadora calculadora = new Calculadora();
-    int resultado = calculadora.subtrair(6, 9);
-    assertEquals(-3, resultado);
+    @Test
+    public void testSubtrair() {
+        Calculadora calc = new Calculadora();
+        assertEquals(5, calc.subtrair(10, 5));
+    }
+
+    @Test
+    public void testMultiplicar() {
+        Calculadora calc = new Calculadora();
+        assertEquals(15, calc.multiplicar(3, 5));
+    }
+
+    @Test
+    public void testDividir() {
+        Calculadora calc = new Calculadora();
+        assertEquals(5, calc.dividir(10, 2));
+    }
+
+    @Test
+    public void testDivisaoPorZero() {
+        Calculadora calc = new Calculadora();
+        assertThrows(ArithmeticException.class, () -> {
+            calc.dividir(10, 0);
+        });
+    }
+}
   }
 }
