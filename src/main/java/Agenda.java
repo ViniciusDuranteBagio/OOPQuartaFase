@@ -7,10 +7,7 @@ import java.net.URI;
 import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
-import java.nio.charset.StandardCharsets;
-import java.security.MessageDigest;
 import java.util.ArrayList;
-import java.util.Base64;
 import java.util.List;
 
 public class Agenda {
@@ -20,49 +17,11 @@ public class Agenda {
 
     private final ImageIcon iconeMenu = new ImageIcon("src/assets/icons8-pegada-de-cachorro-32.png");
 
-    private static final String HASH_SENHA =
-            "d4ea8a5a57f347e92b25ef7bb8e39811989aadd6c6ed54b76fe46a17cfa73f92";
-
-    private static final String[] PARTES = {
-            "VDFKUk0xQlFRVmM9",
-            "ZHpSUE9BPT0=",
-            "ZFdsblBUMU5hbVpV",
-            "VkVGdmJsVnFNSEZu",
-            "WmpWaWFGcG9SMjV3THc9PQ=="
-    };
-
-    @SuppressWarnings("ConstantConditions")
-    private int[] obterOrdem() {
-        int p = "Agenda".length();
-        int q = p << 1;
-        int v1 = q - 8 - 1;
-        int v2 = v1 - 1;
-        int v3 = v2 - 2;
-        int v4 = v3 + 1;
-
-        return new int[]{q - 8, v1, v2, v3, v4};
-    }
-
-    private void reconstruirChave() {
-        StringBuilder sb = new StringBuilder();
-        try {
-            int[] ordem = obterOrdem();
-            for (int idx : ordem) {
-                byte[] decOnce = Base64.getDecoder().decode(PARTES[idx]);
-                byte[] decTwice = Base64.getDecoder().decode(decOnce);
-                sb.append(new String(decTwice, StandardCharsets.UTF_8));
-            }
-            chaveAPI = sb.toString();
-        } catch (Exception e) {
-            chaveAPI = null;
-        }
-    }
-
-    private String chaveAPI = null;
-
     public boolean validarAcesso() {
         int tentativas = 0;
+
         while (tentativas < 3) {
+
             String senhaDigitada = JOptionPane.showInputDialog(
                     null,
                     "Digite a senha para desbloquear o sistema:",
@@ -74,32 +33,23 @@ public class Agenda {
                 return false;
             }
 
-            String h = gerarHashSHA256(senhaDigitada);
-            if (h.equals(HASH_SENHA)) {
-                reconstruirChave();
-                NomeAPI.setApiKey(chaveAPI);
-                return true;
-            } else {
-                tentativas++;
-                JOptionPane.showMessageDialog(null,
-                        "Senha incorreta! Tentativa " + tentativas + " de 3.",
-                        "Erro de autenticação",
-                        JOptionPane.ERROR_MESSAGE);
-            }
-        }
-        return false;
-    }
+            String chaveReal = ChaveProtegida.obterChaveReal(senhaDigitada);
 
-    private String gerarHashSHA256(String texto) {
-        try {
-            MessageDigest digest = MessageDigest.getInstance("SHA-256");
-            byte[] hash = digest.digest(texto.getBytes(StandardCharsets.UTF_8));
-            StringBuilder sb = new StringBuilder();
-            for (byte b : hash) sb.append(String.format("%02x", b));
-            return sb.toString();
-        } catch (Exception e) {
-            return "";
+            if (chaveReal != null) {
+                NomeAPI.setApiKey(chaveReal);
+                return true;
+            }
+
+            tentativas++;
+            JOptionPane.showMessageDialog(
+                    null,
+                    "Senha incorreta! Tentativa " + tentativas + " de 3.",
+                    "Erro de autenticação",
+                    JOptionPane.ERROR_MESSAGE
+            );
         }
+
+        return false;
     }
 
     public void cadastrarConsulta() {
@@ -233,7 +183,6 @@ public class Agenda {
                 }
             }
 
-            // Adiciona a consulta à lista
             consultas.add(new Consulta(animal, tipoAtendimento, doenca));
             JOptionPane.showMessageDialog(null, "Consulta cadastrada com sucesso!");
 
@@ -436,37 +385,49 @@ public class Agenda {
     }
 
     static class NomeAPI {
-        private static final String URL_API = "https://api.api-ninjas.com/v1/babynames?gender=neutral";
-        private static String API_KEY = "";
+
+        private static final String URL_API =
+                "https://api.api-ninjas.com/v1/babynames?gender=neutral";
+
+        private static String API_KEY = null;
 
         public static void setApiKey(String key) {
             API_KEY = key;
         }
 
         public static String[] getSugestoesNomes(int quantidade) {
+
             try {
                 if (API_KEY == null || API_KEY.isEmpty()) {
+                    System.err.println("⚠ API não desbloqueada: chave vazia.");
                     return new String[0];
                 }
 
                 HttpClient client = HttpClient.newHttpClient();
+
                 HttpRequest request = HttpRequest.newBuilder()
                         .uri(URI.create(URL_API))
                         .header("X-Api-Key", API_KEY)
                         .GET()
                         .build();
 
-                HttpResponse<String> response = client.send(request, HttpResponse.BodyHandlers.ofString());
+                HttpResponse<String> response =
+                        client.send(request, HttpResponse.BodyHandlers.ofString());
 
                 if (response.statusCode() != 200) {
-                    System.err.println("Erro ao buscar nomes: código " + response.statusCode());
+                    System.err.println("Erro ao buscar nomes: HTTP " + response.statusCode());
                     return new String[0];
                 }
 
-                String body = response.body().replace("[", "").replace("]", "").replace("\"", "");
+                String body = response.body()
+                        .replace("[", "")
+                        .replace("]", "")
+                        .replace("\"", "");
+
                 String[] nomesArray = body.split(",");
 
                 List<String> lista = new ArrayList<>();
+
                 for (int i = 0; i < nomesArray.length && lista.size() < quantidade; i++) {
                     String nome = nomesArray[i].trim();
                     if (!nome.isEmpty()) lista.add(nome);
@@ -479,6 +440,7 @@ public class Agenda {
             }
         }
     }
+
 
     private JPanel criarPainelTitulo(ImageIcon icone) {
         JLabel titulo = new JLabel("Consultas Cadastradas", SwingConstants.CENTER);
